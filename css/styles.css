@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.1em;
+}
+
+/*COMIENZO CON LAS CLASES DE LAS DISTINTAS SECCIONES*/
+
+/*ELEMENTOS DEL HEADER*/
+.cabecera {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width: 100%;
+    height: 30vh;
+    background-color: rgb(153, 255, 255);
+
+
+}
+
+#logo {
+    height: 16vh;
+    margin-top: 1vh;
+    margin-bottom: 3vh;
+    margin-right: 4vh;
+}
+
+/*INDEX*/
+/*MENU DESPLEGABLE*/
+.linkN{
+    margin: 4vh;
+    display:inline-flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+a{
+    text-decoration: none;
+}
+/*ELEMENTOS DEL MAIN*/
+.principal {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+
+}
+.tratamientos {
+    margin-top: 5vh;
+    background-color: rgb(122, 191, 251);
+    text-align: center;
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+}
+.imagenesT {
+    border-radius: 10%;
+    height: 15%;
+    width: 15%;
+    margin: 3vh;
+}
+.agendaT {
+    text-align: center;
+    background-color: rgb(21, 231, 217);
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+.imagenesAgenda {
+    height: 15%;
+    width: 15%;
+    border-radius: 10%;
+
+}
+.nosotrosT {
+    display: flex;
+    padding: 3vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: cadetblue;
+
+}
+.imagenesNosotros {
+    width: 18%;
+    height: 18%;
+    border-radius: 10%;
+    margin: 4vh;
+}
+.opinionT {  
+    text-align: center;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    background-color: rgb(243, 207, 116);
+}
+.imagenesOpinion {
+    height: 15%;
+    width: 15%;
+    margin-right: 4.5%;
+    margin-left: 5%;
+    border-radius: 45%;
+}
+
+/*CONTACTO*/
+.formulario {
+    font-size: 0.7em;
+    padding-top: 28vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
+}
+.tituloCONT {
+    font-size: 1.5em;
+    padding-bottom: 1vh;
+}
+.contel{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/*NOSOTROS*/
+.doctores {
+    background-color: thistle;
+    text-align: center;
+    font-size: 1em;
+    padding-top: 28vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
+}
+.imagenesNOS {
+    height: 20%;
+    width: 20%;
+    margin-left: 3vh;
+    border-radius: 30px;
+    border-style: groove;
+}
+.clinica {
+    text-align: center;
+    padding: 6vh;
+    background-color: aqua;
+}
+.ubicacion {
+    text-align: center;
+    background-color: wheat;
+}
+
+/*TRATAMIENTOS*/
+.tratamientos {
+    padding-top: 20vh;
+    margin-top: 0;
+}
+
+.videosT {
+    padding: 5vh;
+}
+
+
+/*OPINIONES*/
+.opiniones {
+    background-color: rgb(169, 247, 187);
+    padding: 29vh;
+    text-align: center;
+    margin-top: 0;
+}
+.imagenesOP {
+    height: 25%;
+    width: 25%;
+    margin: auto;
+    padding-top: 0vh;
+    border-radius: 30px;
+    display: block;
+    border-style: ridge;
+}
+.foroOP {
+    background-color: cornsilk;
+    padding-bottom: 10vh;
+    text-align: center;
+}
+
+/* ELEMENTOS DEL FOOTER*/
+.pie {
+    background-color: rgb(153, 255, 255);
+    text-align: center;
+    height: 25vh;
+    width: 100%;
+}
