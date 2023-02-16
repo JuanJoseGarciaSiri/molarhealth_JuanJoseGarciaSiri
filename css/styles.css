@@ -13,12 +13,11 @@
     display: flex;
     align-items: center;
     justify-content:center;
+    position:fixed;
     width: 100%;
-    height: 30vh;
+    height: 20vh;
     background-color: rgb(153, 255, 255);
-
-
-}
+    z-index: 10;}
 
 #logo {
     height: 16vh;
@@ -40,23 +39,10 @@ a{
 }
 /*ELEMENTOS DEL MAIN*/
 .principal {
-    display: flex;
-    flex-direction: column;
     background-color: rgb(255, 255, 255);
-
 }
-.tratamientos {
-    margin-top: 5vh;
-    background-color: rgb(122, 191, 251);
-    text-align: center;
-    padding-top: 10vh;
-    padding-bottom: 5vh;
-}
-.imagenesT {
-    border-radius: 10%;
-    height: 15%;
-    width: 15%;
-    margin: 3vh;
+.carousel-item{
+    height: 90vh;
 }
 .agendaT {
     text-align: center;

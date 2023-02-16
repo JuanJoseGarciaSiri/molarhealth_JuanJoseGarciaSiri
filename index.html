@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="assets/images/favicoonnn.ico">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/styles.css">
   <title>CLINICA MOLARHEALTH</title>
 </head>
@@ -15,48 +16,96 @@
     <img id="logo" src="./assets/images/LOGOMH.png">
     <nav>
       <ul>
-        <li  class="linkN"><a href="#">Inicio</a></li>
-        <li  class="linkN"><a href="./pages/nosotros.html">Nosotros</a></li>
-        <li  class="linkN"><a href="./pages/contacto.html">Contacto y Agenda</a></li>
-        <li  class="linkN"><a href="./pages/tratamientos.html">Tratamientos</a></li>
-        <li  class="linkN"><a href="./pages/opiniones.html">Opiniones</a></li>
+        <li class="linkN"><a href="#">Inicio</a></li>
+        <li class="linkN"><a href="./pages/nosotros.html">Nosotros</a></li>
+        <li class="linkN"><a href="./pages/contacto.html">Contacto y Agenda</a></li>
+        <li class="linkN"><a href="./pages/tratamientos.html">Tratamientos</a></li>
+        <li class="linkN"><a href="./pages/opiniones.html">Opiniones</a></li>
       </ul>
     </nav>
   </header>
-  <main class="principal">
-    <section class="tratamientos">
-      <!-- PROXIMAMENTE VA A SER CAROUSEL DE FOTOS -->
-      <h2><a href="./pages/tratamientos.html">Nuestros Tratamientos</a></h2>
-      <img class="imagenesT" src="./assets/images/endodoncia.jpg">
-      <img class="imagenesT" src="./assets/images/implantess.jpg">
-      <img class="imagenesT" src="./assets/images/aparatoss.jpg">
-      <img class="imagenesT" src="./assets/images/aparatoinvisible.jpg">
-      <img class="imagenesT" src="./assets/images/periodoncia.jpg">
-    </section>
-    <section class="agendaT">
+  <main class="container-fluid principal">
+  <!--EMPIEZA CARROUSEL DE TRATAMIENTOS-->  
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <a href="./pages/tratamientos.html"><img src="./assets/images/aparatoinvisible.jpg" class="d-block w-100" alt="aparato invisible"></a>
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Tratamientos 2023</h2>
+          <p>La ortodoncia invisible, la nueva tendencia de la salud dental</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <a href="./pages/tratamientos.html"><img src="./assets/images/aparatoss.jpg" class="d-block w-100" alt="aparatos"></a>
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Tratamientos 2023</h2>
+          <p>Los aparatos de siempre para dejar tu sonrisa perfecta</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <a href="./pages/tratamientos.html"><img src="./assets/images/implantess.jpg" class="d-block w-100" alt="implantes"></a>
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Tratamientos 2023</h2>
+          <p>Implantes para rellenar tus piezas faltantes</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <a href="./pages/tratamientos.html"><img src="./assets/images/endodoncia.jpg" class="d-block w-100" alt="endodoncia"></a>
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Tratamientos 2023</h2>
+          <p>Cuidamos la salud de tus nervios dentales, agendate a nuestros tratamientos endodonticos</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <a href="./pages/tratamientos.html"><img src="./assets/images/periodoncia.jpg" class="d-block w-100" alt="periodoncia"></a>
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Tratamientos 2023 </h2>
+          <p>Para patologias de encia, tenemos la solucion periodontal que necesitas</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+    <div class="agendaT">
       <h2><a href="./pages/contacto.html">Agenda Tu Consulta</a></h2>
       <h2> Tu Salud Dental Optima A Un Par De Clicks De Distancia</h2>
 
       <!-- IMAGENES CORRESPONDIENTES -->
       <img class="imagenesAgenda" src="./assets/images/cepillado.jpg">
-    </section>
-    <section class="nosotrosT">
+    </div>
+    <div class="nosotrosT">
       <h2> <a href="./pages/nosotros.html">¿Quiénes somos?</a> </h2>
       <!-- cuadro con fotos y pequenas descripciones-->
       <img class="imagenesNosotros" src="./assets/images/clinica3.png">
       <p class="textoNOS"> Conoce mas detalles sobre nuestra histórica clínica montevideana. </p>
 
-    </section>
-    <section class="opinionT">
+    </div>
+    <div class="opinionT">
       <h2> <a href="./pages/opiniones.html">Nuestros Pacientes</a></h2>
       <p>Mira lo que nuestros queridos pacientes tienen para decir sobre nosotros en nuestra sección blog
       </p>
       <img class="imagenesOpinion" src="./assets/images/paciente1.jpg">
       <img class="imagenesOpinion" src="./assets/images/paciente2.jpg">
       <img class="imagenesOpinion" src="./assets/images/paciente3.jpg">
-    </section>
+    </div>
   </main>
-  <footer class="pie">
+  <footer class="container-fluid pie">
     <h2>seguinos en las redes</h2>
     <div>
       <p>todos los derechos reservados</p>
@@ -66,6 +115,6 @@
       <p><a href="https://web.telegram.org/z/">Telegram</a></p>
     </div>
   </footer>
+  <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
