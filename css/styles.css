@@ -16,7 +16,7 @@
     position:fixed;
     width: 100%;
     height: 20vh;
-    background-color: rgb(153, 255, 255);
+    background-color: rgb(233, 255, 255);
     z-index: 10;}
 
 #logo {
@@ -43,27 +43,24 @@ a{
 }
 .carousel-item{
     height: 90vh;
+    object-fit: cover;
 }
 .agendaT {
+    display: flex;
     text-align: center;
-    background-color: rgb(21, 231, 217);
-    padding-top: 5vh;
-    padding-bottom: 5vh;
+    background-color: rgb(199, 208, 207);
 }
 .imagenesAgenda {
-    height: 15%;
-    width: 15%;
-    border-radius: 10%;
-
+    height: 100%;
+    width: 100%;
 }
 .nosotrosT {
     display: flex;
     padding: 3vh;
     flex-direction: column;
+    background-image: url(../assets/images/instrumentoss.jpg);
     align-items: center;
     justify-content: space-around;
-    background-color: cadetblue;
-
 }
 .imagenesNosotros {
     width: 18%;
@@ -71,11 +68,11 @@ a{
     border-radius: 10%;
     margin: 4vh;
 }
-.opinionT {  
+.opiniones {  
+    display: flex;
+    justify-content: center;
     text-align: center;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
-    background-color: rgb(243, 207, 116);
+    background-color: rgb(167, 174, 174);
 }
 .imagenesOpinion {
     height: 15%;
@@ -120,7 +117,11 @@ a{
 .clinica {
     text-align: center;
     padding: 6vh;
-    background-color: aqua;
+    background-color: rgb(174, 245, 245);
+}
+.card-img{
+    height:100vh;
+    width: 100%;
 }
 .ubicacion {
     text-align: center;
@@ -139,8 +140,8 @@ a{
 
 
 /*OPINIONES*/
-.opiniones {
-    background-color: rgb(169, 247, 187);
+.opinionesP {
+    background-color: rgb(221, 244, 227);
     padding: 29vh;
     text-align: center;
     margin-top: 0;
