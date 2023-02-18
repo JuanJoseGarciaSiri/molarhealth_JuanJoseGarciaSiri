@@ -13,7 +13,7 @@
 
 <body>
   <header class="cabecera">
-    <img id="logo" src="../assets/images/LOGOMH.png">
+   <a href="../index.html"><img id="logo" src="../assets/images/LOGOMH.png"></a>
     <nav>
       <ul>
         <li  class="linkN"><a href="../index.html">Inicio</a></li>
@@ -25,57 +25,63 @@
     </nav>
   </header>
   <main>
-    <section>
+    <section class="container formulario">
 
       <form class="formulario" action="validar.html">
         <legend class="tituloCONT">Agenda Una Consulta</legend>
         <fieldset>
           <legend> Datos Personales</legend>
-          <div class=>
-            <label for="nombre">Nombre y Apellido </label>
-            <input name="nombre" placeholder="ej. Juan Perez" required>
+          <div class="row g-3">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+            </div>
           </div>
-          <div>
-            <label for="sexo">Femenino</label>
-            <input name="sexo" type="radio" value="Masculino" required>
-            <label for="sexo">Masculino</label>
-            <input name="sexo" type="radio" value="Femenino" required>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+            <label class="form-check-label" for="inlineRadio1">Masculino</label>
           </div>
-          <div>
-            <label for="correo">Correo Electrónico</label>
-            <input name="correo" type="email" placeholder="ej. juanitoperez@gmail.com" required>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+            <label class="form-check-label" for="inlineRadio2">Femenino</label>
           </div>
-          <div>
-            <label for="telefono">Numero de Teléfono</label>
-            <input name="telefono" type="tel" maxlength="9" placeholder="ej.123456789" required>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Correo Electrónico</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="ej. juanitoperez@gmail.com">
+          </div>
+          <div class="input-group mb-3">
+            <input type="tel" class="form-control" maxlength="17" placeholder="Telefono ej.123456789" required aria-label="Text input with dropdown button">
           </div>
         </fieldset>
         <fieldset>
           <legend>Sobre la Consulta</legend>
-          <div>
-            <label for="fecha">Fecha y Hora de Consulta</label>
-            <input name="fecha" type="date" required>
-            <input type="time">
+          <div class="row g-3">
+            <div class="col">
+              <input type="date" class="form-control" placeholder="Fecha de Consulta" aria-label="Fecha">
+            </div>
+            <div class="col">
+              <input type="time" class="form-control" placeholder="Hora de Consulta" aria-label="Hora">
+            </div>
           </div>
-          <div>
-            <legend>Notas médicas de Relevancia </legend>
-            <textarea name="notas" placeholder="ej. Alergia a la penicilina" style="height: 5%; width: 10%;"></textarea>
+          <div class="form-floating">
+            <textarea class="form-control" placeholder="Notas medicas de relevancia" id="floatingTextarea2" style="height: 100px"></textarea>
+            <label for="floatingTextarea2">Notas Medicas de Relevancia</label>
           </div>
-          <div>
-            <legend>Seleccione su Especialidad</legend>
-            <select name="Especialidad" required>
-              <option value="OdontoGeneral">Odontología General</option>
-              <option value="Ortodoncia Invisible">Ortodoncia Invisible</option>
-              <option value="Ortodoncia Trad">Ortodoncia Tradicional</option>
-              <option value="Endodoncia">Endodoncia</option>
-              <option value="Implantes">Implantes</option>
-              <option value="Periodoncia">Periodoncia</option>
-            </select>
-          </div>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Seleccione su Especialidad</option>
+            <option value="OdontoGeneral">Odontología General</option>
+            <option value="Ortodoncia Invisible">Ortodoncia Invisible</option>
+            <option value="Ortodoncia Trad">Ortodoncia Tradicional</option>
+            <option value="Endodoncia">Endodoncia</option>
+            <option value="Implantes">Implantes</option>
+            <option value="Periodoncia">Periodoncia</option>
+          </select>
         </fieldset>
         <div>
-          <input type="submit" value="Enviar">
-          <input type="reset" value="Limpiar">
+          <button type="submit" class="btn btn-primary">Enviar</button>
+          <button type="reset" class="btn btn-primary">Limpiar</button>
         </div>
 
       </form>
@@ -89,16 +95,21 @@
     </section>
   </main>
 
-  <footer class="pie">
-    <h2> seguinos en las redes</h2>
-    <div>
+  <footer class="container-fluid pie">
+    <h2>seguinos en las redes</h2>
+    <div class="row">
       <p>todos los derechos reservados</p>
+      <!-- ACA VAN A IR ICONOS DE LAS REDES SOCIALES-->
+      <div class="col">
       <p><a href="https://www.instagram.com/">Instagram</a></p>
+      </div>
+      <div class="col">
       <p><a href="https://twitter.com/?lang=es">Twitter</a></p>
+      </div>
+      <div class="col">
       <p><a href="https://web.telegram.org/z/">Telegram</a></p>
-    </div>
-
-
+      </div>
+  </div>
   </footer>
   <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
