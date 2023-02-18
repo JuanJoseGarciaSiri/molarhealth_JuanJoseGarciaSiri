@@ -94,20 +94,27 @@ a {
 
 /*CONTACTO*/
 .formulario {
-    font-size: 0.7em;
-    padding-top: 28vh;
+    padding-top: 10vh;
+    font-size: 1em;
     padding-left: 5vh;
     padding-right: 5vh;
+    background-color: rgb(189, 229, 200);
 }
 
 .tituloCONT {
-    font-size: 1.5em;
+    font-size: 1.8em;
     padding-bottom: 1vh;
 }
 
 .contel {
+    background-color: gainsboro;  
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 1vh;
+}
+.consultasEinformes{
+    align-items: center;
+    justify-content: center;
+    padding: 5vh;
 }
 
 /*NOSOTROS*/
@@ -169,26 +176,29 @@ a {
 
 /*OPINIONES*/
 .opinionesP {
-    background-color: rgb(221, 244, 227);
-    padding: 29vh;
+    background-color: rgb(221, 243, 244);
+    padding: 15vh;
     text-align: center;
     margin-top: 0;
 }
-
 .imagenesOP {
-    height: 25%;
-    width: 25%;
-    margin: auto;
+    height: 100%;
+    width: 100%;
     padding-top: 0vh;
-    border-radius: 30px;
-    display: block;
-    border-style: ridge;
+
+}
+.tarjeta{
+  width: 80%;
 }
 
 .foroOP {
-    background-color: cornsilk;
-    padding-bottom: 10vh;
+    background-color: rgb(235, 232, 220);
+    padding: 5vh;
     text-align: center;
+}
+.datosOP{
+    width:100%;
+    margin-left: 10vh;
 }
 
 /* ELEMENTOS DEL FOOTER*/

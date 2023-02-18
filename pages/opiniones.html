@@ -25,7 +25,7 @@
     </nav>
   </header>
   <main>
-    <section class="opinionesP">
+    <section class="container-fluid opinionesP">
       <br>
       <br>
       <legend>Bienvenido Al Foro De Pacientes De Nuestra Clínica!</legend>
@@ -35,48 +35,79 @@
         colgaremos aquí</h2>
       <br>
       <br>
-      <!--LAS FOTOS IRAN EN TARJETAS PROXIMAMENTE-->
-      <img class="imagenesOP" src="../assets/images/paciente1.jpg">
-      <p>"Mis dientes solían verse muy mal y mis infecciones bucales eran muy frecuentes,
-        Gracias a los brilantes dentistas de MOLARHEALTH y sus
-        geniales limpiezas mis dientes lucen mejor que nunca"
-      </p>
-      <legend>-Carla</legend>
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card tarjeta">
+            <img src="../assets/images/paciente1.jpg" class="card-img-top imagenesOP " alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Carla</h5>
+              <p class="card-text">"Mis dientes solían verse muy mal y mis infecciones bucales eran muy frecuentes,
+                Gracias a los brilantes dentistas de MOLARHEALTH y sus
+                geniales limpiezas mis dientes lucen mejor que nunca"</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card tarjeta">
+            <img src="../assets/images/paciente2.jpg" class="card-img-top imagenesOP" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Igor</h5>
+              <p class="card-text">"Hace dos años tuve un accidente con un trozo de asado que no estaba nada tierno y perdí 3 dientes!
+                Gracias MOLARHEALTH por la brillante atencion brindada y los implantes de primer nivel, es como si el
+                accidente nunca hubiese sucedido!"</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card tarjeta">
+            <img src="../assets/images/paciente3.jpg" class="card-img-top imagenesOP" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Matias</h5>
+              <p class="card-text">"Lo que mas me agradó de mi experiencia en la clínica MOLARHEALTH fue que curaron mi miedo a los dentistas!
+                Ahora no puedo esperar a tener otra caries para asistir nuevamente!"</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card tarjeta">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Nunca se podria llegar a ocurrir que mis dientes puedieran volver a la normalidad luego de que un enjambre de abejas atacara mis encias,
+                gracias MOLARHEALTH por el tratamiento periodontal que mejoro mi vida
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
       <br>
       <br>
-      <img class="imagenesOP" src="../assets/images/paciente2.jpg">
-      <p>"Hace dos años tuve un accidente con un trozo de asado que no estaba nada tierno y perdí 3 dientes!
-        Gracias MOLARHEALTH por la brillante atencion brindada y los implantes de primer nivel, es como si el
-        accidente nunca hubiese sucedido!"
-      </p>
-      <legend>-Igor</legend>
-      <br>
-      <br>
-      <img class="imagenesOP" src="../assets/images/paciente3.jpg">
-      <p>"Lo que mas me agradó de mi experiencia en la clínica MOLARHEALTH fue que curaron mi miedo a los dentistas!
-        Ahora no puedo esperar a tener otra caries para asistir nuevamente!"
-      </p>
-      <legend>-Matías</legend>
-      <br>
-      <br>
+
     </section>
-    <section class="foroOP">
+    <section class="container-fluid d-flex foroOP">
+      <div class="row">
+      <div class="col">
       <h2>
         ¿Ya te sumaste a la experiencia MOLARHEALTH?
-        Contanos como te fue!
       </h2>
+      <h3>Contanos como te fue utilizando el
+        ID que te dimos al empezar el tratamiento
+      </h3>
+      </div>
+      <div class="col">
       <form>
-        <div>
-          <textarea placeholder="Escribe Aquí Tu Experiencia" maxlength="100"></textarea>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label ">ID de paciente</label>
+          <input type="text" class="form-control datosOP" id="exampleFormControlInput1" required placeholder="a123bc4d">
         </div>
-        <div>
-          <label for="id">ID de Paciente (Otorgado en la clínica al entrar)</label>
-          <input name="id" type="number" placeholder="ej. 12345" maxlength="5" required>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Experiencia</label>
+          <textarea class="form-control datosOP" id="exampleFormControlTextarea1" rows="3" required></textarea>
         </div>
-        <div>
-          <input value="Enviar" type="submit">
-          <input value="Limpiar" type="reset">
-        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+        <button type="reset" class="btn btn-primary">Limpiar</button>
+      </div>
+  </div>
       </form>
     </section>
   </main>
