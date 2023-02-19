@@ -56,7 +56,7 @@ a{
     display: flex;
     text-align: center;
     color: aliceblue;
-    background-color: rgb(11, 9, 84);
+    background-color: rgb(20, 18, 155);
 }
 
 .imagenesAgenda {
@@ -84,7 +84,7 @@ a{
     display: flex;
     justify-content: center;
     text-align: center;
-    background-color: rgb(167, 174, 174);
+    background-color: rgb(20, 18, 155);
 }
 
 .imagenesOpinion {
@@ -101,7 +101,7 @@ a{
     font-size: 1em;
     padding-left: 5vh;
     padding-right: 5vh;
-    background-color: rgb(189, 229, 200);
+    background-color: rgb(20, 18, 155);
 }
 
 .tituloCONT {
@@ -110,9 +110,8 @@ a{
 }
 
 .contel {
-    background-color: gainsboro;  
+    background-color: rgb(54, 38, 199);  
     text-align: center;
-    margin-bottom: 1vh;
 }
 .consultasEinformes{
     align-items: center;
@@ -145,7 +144,7 @@ a{
 .clinica {
     text-align: center;
     padding: 6vh;
-    background-color: rgb(174, 245, 245);
+    background-color: rgb(20, 18, 155);
 }
 
 .card-img {
@@ -156,7 +155,7 @@ a{
 
 .ubicacion {
     text-align: center;
-    background-color: rgb(213, 211, 208);
+    background-color: rgb(54, 38, 199);
 }
 
 .mapa {
@@ -172,6 +171,10 @@ a{
 /*TRATAMIENTOS*/
 .tratamientos {
     padding:15vh;
+    background-color: blue;
+}
+.textoContraste{
+    color: black;
 }
 .trat{
     padding: 10vh;
