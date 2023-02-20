@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="../assets/images/real_faviconn.ico">
+  <link rel="icon" href="../assets/images/real_favicon.ico">
   <link rel="stylesheet" href="../css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/styles.css">
   <title>CLINICA MOLARHEALTH</title>
@@ -13,8 +13,8 @@
 
 <body>
   <header class="cabecera">
-    <a href="../index.html"><img id="logo" src="../assets/images/logomhblanco.png"></a>  
-      <nav>
+    <a href="../index.html"><img id="logo" src="../assets/images/logomhblanco.png"></a>
+    <nav>
       <ul>
         <li class="linkN"><a href="../index.html">Inicio</a></li>
         <li class="linkN"><a href="../pages/nosotros.html">Nosotros</a></li>
@@ -60,46 +60,48 @@
         <fieldset>
           <legend>Sobre la Consulta</legend>
           <div class="row g-3">
-            <div class="col">
+            <div class="col consultas">
               <input type="date" class="form-control" placeholder="Fecha de Consulta" aria-label="Fecha">
             </div>
-            <div class="col">
+            <div class="col consultas">
               <input type="time" class="form-control" placeholder="Hora de Consulta" aria-label="Hora">
             </div>
           </div>
-          <div class="form-floating">
-            <textarea class="form-control" placeholder="Notas medicas de relevancia" id="floatingTextarea2"
-              style="height: 100px"></textarea>
-            <label for="floatingTextarea2">Notas Medicas de Relevancia</label>
-          </div>
-          <select class="form-select" aria-label="Default select example">
+          <select class="form-select consultas" aria-label="Default select example">
             <option selected>Seleccione su Especialidad</option>
-            <option value="OdontoGeneral">Odontología General</option>
-            <option value="Ortodoncia Invisible">Ortodoncia Invisible</option>
-            <option value="Ortodoncia Trad">Ortodoncia Tradicional</option>
-            <option value="Endodoncia">Endodoncia</option>
-            <option value="Implantes">Implantes</option>
-            <option value="Periodoncia">Periodoncia</option>
+            <option class="opciones" value="OdontoGeneral">Odontología General</option>
+            <option class="opciones" value="Ortodoncia Invisible">Ortodoncia Invisible</option>
+            <option class="opciones" value="Ortodoncia Trad">Ortodoncia Tradicional</option>
+            <option class="opciones" value="Endodoncia">Endodoncia</option>
+            <option class="opciones" value="Implantes">Implantes</option>
+            <option class="opciones" value="Periodoncia">Periodoncia</option>
           </select>
         </fieldset>
-        <div>
-          <button type="submit" class="btn btn-primary">Enviar</button>
-          <button type="reset" class="btn btn-primary">Limpiar</button>
+
+        <div class="form-floating consultas">
+          <textarea class="form-control " placeholder="Notas medicas de relevancia" id="floatingTextarea2"
+            style="height: 100px"></textarea>
+          <label class="opciones" for="floatingTextarea2">Notas Medicas de Relevancia</label>
         </div>
+        <div>
+          <button type="submit" class="btn btn-primary finForm ">Enviar</button>
+          <button type="reset" class="btn btn-primary finForm">Limpiar</button>
+        </div>
+
 
       </form>
     </section>
     <section class="container-fluid contel">
       <div class="row">
         <div class="col consultasEinformes">
-        <h2>Por consultas e informes</h2>
+          <h2>Por consultas e informes</h2>
+        </div>
+        <div class="col">
+          <p>Telefóno:098000000</p>
+          <p>Correo Electrónico: molarhealthclinic@gmail.com</p>
+          <p>Horario De Atención: lunes a viernes de 9hs a 21hs</p>
+        </div>
       </div>
-      <div class="col">
-        <p>Telefóno:098000000</p>
-        <p>Correo Electrónico: molarhealthclinic@gmail.com</p>
-        <p>Horario De Atención: lunes a viernes de 9hs a 21hs</p>
-      </div>
-    </div>
     </section>
   </main>
 
