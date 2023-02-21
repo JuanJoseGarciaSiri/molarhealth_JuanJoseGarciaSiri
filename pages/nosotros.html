@@ -12,26 +12,47 @@
 </head>
 
 <body>
-  <header class="cabecera">
+  <header>
+    <div class="container-fluid cabecera">
     <a href="../index.html"><img id="logo" src="../assets/images/logomhblanco.png"></a>
     <nav>
-      <ul>
-        <li class="linkN"><a href="../index.html">Inicio</a></li>
-        <li class="linkN"><a href="#">Nosotros</a></li>
-        <li class="linkN"><a href="../pages/contacto.html">Contacto y Agenda</a></li>
-        <li class="linkN"><a href="../pages/tratamientos.html">Tratamientos</a></li>
-        <li class="linkN"><a href="../pages/opiniones.html">Opiniones</a></li>
+      <nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 links">
+        <li class="nav-item">
+          <a class="nav-link navLinks"  href="../index.html">Inicio</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link navLinks" href="#">Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link navLinks" href="./contacto.html">Contacto y Agenda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link navLinks" href="./tratamientos.html">Tratamientos</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link navLinks" href="./opiniones.html">Opiniones</a>
+        </li>
       </ul>
+    </div>
+  </div>
+</nav>
     </nav>
+  </div>
   </header>
-  <main>
+  <main class="container-fluid principal">
     <section>
-      <div class="container-fluid doctores">
-        <div class="row">
+      <div class="d-flex container-fluid doctores">
+        <div class="row titulonos">
           <h1>Conoce a Nuestro Equipo!</h1>
         </div>
         <div class="row">
-          <div class="col">
+          <div class="col-sm-12 col-md-12 col-lg-4 colDocs">
             <div class="card docs" style="width: 18rem;">
               <img src="../assets/images/dentista1.png" class="card-img-top" alt="dentista1">
               <div class="card-body">
@@ -39,7 +60,7 @@
               </div>
             </div>
           </div>
-          <div class="col">
+          <div class=" col-sm-12 col-md-12 col-lg-4 colDocs">
             <div class="card docs" style="width: 18rem;">
               <img src="../assets/images/dentista2.png" class="card-img-top" alt="dentista2">
               <div class="card-body">
@@ -47,7 +68,7 @@
               </div>
             </div>
           </div>
-          <div class="col">
+          <div class=" col-sm-12 col-md-12 col-lg-4 colDocs">
             <div class="card docs" style="width: 18rem;">
               <img src="../assets/images/dentista3.png" class="card-img-top" alt="dentista3">
               <div class="card-body">
@@ -107,13 +128,16 @@
       </div>
     </section>
     <section class="d-flex container-fluid ubicacion">
-      <div class="col mapadesc">
+      <div class="row">
+       <div class="col-sm-12 col-md-12 col-lg-12 mapadesc">
         <h2>¿Donde Estamos?</h2>
         <p>Nos ubicamos sobre la siempre concurrida Avenida Italia, en su cruce con la calle Comercio, un punto muy
           transitado y característico de la ciudad de Montevideo, en el límite entre los barrios de Buceo y Unión.
         </p>
       </div>
-      <div class="col mapa">
+      <div class="row">
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-12  mapa">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.7889967884416!2d-56.
       131971284806134!3d-34.88664448038726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
       1!3m3!1m2!1s0x959f81275e8e0cf3%3A0x5b0074e1563d615d!2sAv.%20Italia%20Y%20Comercio!5e0!3m2!1ses-419
@@ -121,6 +145,8 @@
           loading="lazy" referrerpolicy="no-referrer-when-downgrade">
         </iframe>
       </div>
+    </div>
+  </div>
     </section>
 
   </main>

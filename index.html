@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,17 +12,40 @@
 </head>
 
 <body>
-  <header class="cabecera">
-    <a href="#"><img id="logo" src="./assets/images/logomhblanco.png"></a>
-    <nav>
-      <ul>
-        <li class="linkN"><a href="#">Inicio</a></li>
-        <li class="linkN"><a href="./pages/nosotros.html">Nosotros</a></li>
-        <li class="linkN"><a href="./pages/contacto.html">Contacto y Agenda</a></li>
-        <li class="linkN"><a href="./pages/tratamientos.html">Tratamientos</a></li>
-        <li class="linkN"><a href="./pages/opiniones.html">Opiniones</a></li>
-      </ul>
-    </nav>
+  <header>
+    <div class="container-fluid cabecera">
+      <a href="#"><img id="logo" src="./assets/images/logomhblanco.png"></a>
+      <nav>
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 links">
+                <li class="nav-item">
+                  <a class="nav-link navLinks" href="#">Inicio</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link navLinks" href="./pages/nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link navLinks" href="./pages/contacto.html">Contacto y Agenda</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link navLinks" href="./pages/tratamientos.html">Tratamientos</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link navLinks" href="./pages/opiniones.html">Opiniones</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </nav>
+    </div>
   </header>
   <main class="container-fluid principal">
     <!--EMPIEZA CARROUSEL DE TRATAMIENTOS-->
@@ -41,44 +65,29 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <a href="./pages/tratamientos.html"><img src="./assets/images/aparatoinvisibleC.jpg" class="d-block w-100 fotoscarousel"
-                alt="aparato invisible"></a>
-            <div class="carousel-caption d-none d-md-block">
-              <h2>Tratamientos 2023</h2>
-              <p>La ortodoncia invisible, la nueva tendencia de la salud dental</p>
-            </div>
+            <a href="./pages/tratamientos.html"><img src="./assets/images/ORTinvCONCARTEL.jpg"
+                class="d-block w-100 fotoscarousel" alt="aparato invisible"></a>
           </div>
           <div class="carousel-item fotoscarousel">
-            <a href="./pages/tratamientos.html"><img src="./assets/images/ortodonciaNormal.jpg" class="d-block w-100 fotoscarousel"
-                alt="aparatos"></a>
-            <div class="carousel-caption d-none d-md-block">
-              <h2>Tratamientos 2023</h2>
-              <p>Los aparatos de siempre para dejar tu sonrisa perfecta</p>
-            </div>
+            <a href="./pages/tratamientos.html"><img src="./assets/images/APARATOEDITADOOO.jpg"
+                class="d-block w-100 fotoscarousel" alt="aparatos"></a>
+           
           </div>
           <div class="carousel-item fotoscarousel">
-            <a href="./pages/tratamientos.html"><img src="./assets/images/implantessCAROUSEL.jpg" class="d-block w-100 fotoscarousel"
-                alt="implantes"></a>
-            <div class="carousel-caption d-none d-md-block">
-              <h2>Tratamientos 2023</h2>
-              <p>Implantes para rellenar tus piezas faltantes</p>
-            </div>
+            <a href="./pages/tratamientos.html"><img src="./assets/images/IMPLANTESEDITT.jpg"
+                class="d-block w-100 fotoscarousel" alt="implantes"></a>
           </div>
           <div class="carousel-item fotoscarousel">
-            <a href="./pages/tratamientos.html"><img src="./assets/images/endodoncia.jpg" class="d-block w-100 fotoscarousel"
-                alt="endodoncia"></a>
+            <a href="./pages/tratamientos.html"><img src="./assets/images/endodoncia.jpg"
+                class="d-block w-100 fotoscarousel" alt="endodoncia"></a>
             <div class="carousel-caption d-none d-md-block">
               <h2>Tratamientos 2023</h2>
               <p>Cuidamos la salud de tus nervios dentales, agendate a nuestros tratamientos endodonticos</p>
             </div>
           </div>
           <div class="carousel-item fotoscarousel">
-            <a href="./pages/tratamientos.html"><img src="./assets/images/periodonciaCAROUSEL.jpg" class="d-block w-100 fotoscarousel"
-                alt="periodoncia"></a>
-            <div class="carousel-caption d-none d-md-block">
-              <h2>Tratamientos 2023 </h2>
-              <p>Para patologias de encia, tenemos la solucion periodontal que necesitas</p>
-            </div>
+            <a href="./pages/tratamientos.html"><img src="./assets/images/PERIODONCIAEDIT.jpg"
+                class="d-block w-100 fotoscarousel" alt="periodoncia"></a>
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
@@ -96,12 +105,14 @@
     <section>
       <div class="container-fluid agendaT">
         <div class="row">
-          <div class="col">
+          <div class="col-sm-12 col-md-6">
             <h2><a href="./pages/contacto.html">Agenda Tu Consulta</a></h2>
-            <a href="./pages/nosotros.html"><h2> Tu Salud Dental Optima A Un Par De Clicks De Distancia</h2></a>
+            <a href="./pages/nosotros.html">
+              <h2> Tu Salud Dental Optima A Un Par De Clicks De Distancia</h2>
+            </a>
           </div>
           <!-- IMAGENES CORRESPONDIENTES -->
-          <div class="col">
+          <div class="col-sm-12 col-md-6">
             <a href="./pages/nosotros.html"><img class="imagenesAgenda" src="./assets/images/cepillado.jpg"></a>
           </div>
         </div>
@@ -109,42 +120,53 @@
     </section>
     <section>
       <div class="nosotrosT">
-        <h2> <a href="./pages/nosotros.html">¿Quiénes somos?</a> </h2>
-        <!-- cuadro con fotos y pequenas descripciones-->
-        <img class="imagenesNosotros" src="./assets/images/clinica3.png">
-        <p class="textoNOS"> Conoce mas detalles sobre nuestra histórica clínica montevideana. </p>
+        <div class="card mb-3 col-sm-12 col-md-8 col-lg-4 NOScard">
+          <div class="row">
+            <img src="./assets/images/clinica3CAROUSEL.png" class="card-img-top imagenesNosotros" alt="clinica">
+            <div class="card-body">
+              <h2 class="card-title txtNOS ">¿Quiénes somos?</h2>
+              <p class="card-text txtNOS">Conoce mas detalles sobre nuestra histórica clínica montevideana.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    <section>    
-      <div class="container-fluid opiniones">      
-        <div class="row">
-          <a href="./pages/opiniones.html"> <h2> Lee a Nuestros Pacientes y Opina Sobre Nosotros!</h2></a>
-        <div class="col">          
-        <div class="card" style="width: 18rem;">
-          <a href="./pages/opiniones.html"><img src="./assets/images/paciente1.jpg" class="card-img-top" alt="paciente1"></a>
-          <div class="card-body">
-            <p class="card-text OPindex">Ven a conocer mi experiencia!</p>
+    <section>
+      <div class="container-fluid opiniones">
+          <div class="row">
+          <a href="./pages/opiniones.html">
+            <h4 class="tituloOP"> Lee a Nuestros Pacientes!</h4>
+          </a>
+       
+          <div class="col-sm-12 col-md-8 col-lg-3 cardOP">
+            <div class="card" style="width: 18rem;">
+              <a href="./pages/opiniones.html"><img src="./assets/images/paciente1.jpg" class="card-img-top "
+                  alt="paciente1"></a>
+              <div class="card-body">
+                <p class="card-text OPindex">Ven a conocer mi experiencia!</p>
+              </div>
+            </div>
           </div>
-        </div>
-       </div>
-       <div class="col">
-        <div class="card" style="width: 18rem;">
-          <a href="./pages/opiniones.html"><img src="./assets/images/paciente2.jpg" class="card-img-top" alt="paciente2"></a>
-          <div class="card-body">
-            <p class="card-text OPindex">Te cuento un poco como fue!</p>
+          <div class="col-sm-12 col-md-12 col-lg-3 cardOP">
+            <div class="card" style="width: 18rem;">
+              <a href="./pages/opiniones.html"><img src="./assets/images/paciente2.jpg" class="card-img-top"
+                  alt="paciente2"></a>
+              <div class="card-body">
+                <p class="card-text OPindex">Te cuento un poco como fue!</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-8 col-lg-3 cardOP">
+            <div class="card" style="width: 18rem;">
+              <a href="./pages/opiniones.html"> <img src="./assets/images/paciente3.jpg" class="card-img-top"
+                  alt="paciente3"></a>
+              <div class="card-body">
+                <p class="card-text OPindex">Estas en buenas manos!</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col">
-        <div class="card" style="width: 18rem;">
-         <a href="./pages/opiniones.html"> <img src="./assets/images/paciente3.jpg" class="card-img-top" alt="paciente3"></a>
-          <div class="card-body">
-            <p class="card-text OPindex">Estas en buenas manos!</p>
-          </div>
-        </div>
-        </div>
-      </div>
-    </div>
     </section>
   </main>
   <footer class="container-fluid pie">
@@ -153,17 +175,16 @@
       <p>todos los derechos reservados</p>
       <!-- ACA VAN A IR ICONOS DE LAS REDES SOCIALES-->
       <div class="col">
-      <p><a href="https://www.instagram.com/">Instagram</a></p>
+        <p><a href="https://www.instagram.com/">Instagram</a></p>
       </div>
       <div class="col">
-      <p><a href="https://twitter.com/?lang=es">Twitter</a></p>
+        <p><a href="https://twitter.com/?lang=es">Twitter</a></p>
       </div>
       <div class="col">
-      <p><a href="https://web.telegram.org/z/">Telegram</a></p>
+        <p><a href="https://web.telegram.org/z/">Telegram</a></p>
       </div>
-  </div>
+    </div>
   </footer>
   <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>

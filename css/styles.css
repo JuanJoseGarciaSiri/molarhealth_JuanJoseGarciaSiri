@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.1em;
+    font-size: 1.2rem;
     color: aliceblue;
 }
 
@@ -12,40 +12,47 @@
 /*ELEMENTOS DEL HEADER*/
 .cabecera {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content:space-evenly;
+    height:24vh;
     position: fixed;
-    width: 100%;
-    height: 20vh;
     background-color: rgb(11, 9, 84);
     z-index: 10;
 }
-
-#logo {
-    height: 16vh;
-    margin-top: 1vh;
-    margin-bottom: 3vh;
-    margin-right: 4vh;
+a{
+    text-decoration: none;
+}
+#logo {   
+margin-top: 4vh;
+height: 12vh;
 }
 
 /*INDEX*/
 /*MENU DESPLEGABLE*/
-.linkN {
-    margin: 4vh;
-    display: inline-flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    color: aliceblue;
+.navbar{
+    padding-top: 6vh;
+    background-color:rgb(11, 9, 84) ;
+  
 }
-
-a{
+.links{
+    width: 100%;
+    background-color: rgba(255, 192, 203, 0);
+    justify-content: space-evenly;
+    overflow-y: hidden;
+  
+    
+}
+.navLinks {
+        background-color:  rgb(11, 9, 84);
+    color: rgb(241, 240, 251)!important;
     text-decoration: none;
 }
 
-/*ELEMENTOS DEL MAIN*/
 .principal {
     background-color: rgb(11, 9, 84);
+    overflow: hidden;
 }
+/*ELEMENTOS DEL MAIN*/
+
 
 .fotoscarousel {
     height: 90vh;
@@ -57,6 +64,8 @@ a{
     text-align: center;
     color: aliceblue;
     background-color: rgb(20, 18, 155);
+    padding-top: 5vh;
+    padding-bottom: 5vh;
 }
 
 .imagenesAgenda {
@@ -66,50 +75,49 @@ a{
 
 .nosotrosT {
     display: flex;
-    padding: 3vh;
-    flex-direction: column;
-    background-image: url(../assets/images/clinica3CAROUSEL.png);
-    background-size:contain;
-    background-repeat:repeat-x;
-    background-blend-mode: color;
     overflow: hidden;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    padding: 10vh;
+    background-image: url(../assets/images/clinicaFOTON.png);
+    background-position: center;
+    background-size: cover;
 }
-
-.imagenesNosotros {
-    width: 18%;
-    height: 18%;
-    border-radius: 10%;
-    margin: 4vh;
+.NOScard{
+    border: 4px;
+    border-color: black;
+    justify-content: center;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.txtNOS{
+    color: black;
 }
 
 .opiniones {
     display: flex;
-    justify-content: center;
+    justify-content:center;
+    align-items: center;
     text-align: center;
     background-color: rgb(20, 18, 155);
-    padding: 10vh;
 }
-
-.imagenesOpinion {
-    height: 15%;
-    width: 15%;
-    margin-right: 4.5%;
-    margin-left: 5%;
-    border-radius: 45%;
+.cardOP{
+    margin: 5vh;
 }
 .OPindex{
     color: rgb(2, 3, 39);
 }
 
 /*CONTACTO*/
-.formulario {
-    padding-top: 10vh;
+.formularios {
+    padding: 15vh;
+    margin-left: 5vh;
+    margin-right: 10vh;
+    justify-content: center;
+    align-items: center;
     font-size: 1em;
-    padding-left: 5vh;
-    padding-right: 5vh;
     background-color: rgb(20, 18, 155);
+    overflow-x: hidden;
 }
 
 .tituloCONT {
@@ -128,7 +136,8 @@ a{
 }
 .contel {
     background-color: rgb(54, 38, 199);  
-    text-align: center;
+    text-align: center
+    ;
 }
 .consultasEinformes{
     align-items: center;
@@ -137,29 +146,28 @@ a{
 }
 
 /*NOSOTROS*/
+
+
 .doctores {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     background-color: rgb(54, 38, 199);
-    text-align: center;
     font-size: 1em;
     padding-top: 28vh;
-    padding-left: 5vh;
-    padding-right: 5vh;
     padding-bottom: 10vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
-
-.docs {
-    margin-left: 5vh;
-    margin-right: 5vh;
+.titulonos{
+padding-top: 15vh;
+}
+.colDocs {
+margin-top: 5vh;
 }
 .textoDOCS{
     color: rgb(8, 8, 8);
     text-decoration:double;
-}
-.imagenesNOS {
-    height: 20%;
-    width: 20%;
-    border-radius: 30px;
-    border-style: groove;
 }
 
 .clinica {
@@ -175,19 +183,24 @@ a{
 }
 
 .ubicacion {
+    flex-wrap: wrap;
+    align-items: flex-start;
     text-align: center;
     background-color: rgb(54, 38, 199);
+    justify-content: center;
 }
 
 .mapa {
     height: 100%;
     width: 100%;
-    margin: 8vh;
+    margin: 4vh;
+    overflow: hidden;
 }
 
 .mapadesc {
-    padding: 10vh;
+    padding: 5vh;
 }
+
 
 /*TRATAMIENTOS*/
 .tratamientos {
@@ -205,7 +218,7 @@ a{
 .opinionesP {
     font-size: 0.7em;
     background-color: rgb(32, 20, 109);
-    padding: 15vh;
+    padding: 18vh;
     text-align: center;
     margin-top: 0; 
 }
@@ -214,6 +227,11 @@ a{
     width: 100%;
     padding-top: 0vh;
 
+}
+.tituloOP{
+    margin-top: 4vh;
+    text-align: center;
+    flex-wrap: wrap;
 }
 .tarjetaCuerpo{
   width: 80%;
@@ -232,8 +250,11 @@ a{
     text-align: center;
 }
 .datosOP{
-    width:100%;
+    width:80%;
     margin-left: 10vh;
+}
+.colFORMOP{
+    overflow: hidden;
 }
 
 /* ELEMENTOS DEL FOOTER*/
@@ -243,4 +264,27 @@ a{
     text-align: center;
     height: 25vh;
     width: 100%;
+}
+@media screen and (max-width:768px) {
+    .fotoscarousel{
+        height: 95vh;
+    }
+    .navbar{
+        width: initial;
+        justify-content: flex-end;
+    }
+    .doctores{
+        align-items: center;
+        padding: 10vh;
+        overflow-x:hidden ;
+    }
+    .mapa{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 350px;
+        margin-left: 3vh;
+        overflow-y: hidden;
+    }
+    
 }

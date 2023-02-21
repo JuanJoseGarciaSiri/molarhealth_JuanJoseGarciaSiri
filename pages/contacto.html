@@ -12,20 +12,42 @@
 </head>
 
 <body>
-  <header class="cabecera">
+  <header>
+    <div class="container-fluid cabecera">
     <a href="../index.html"><img id="logo" src="../assets/images/logomhblanco.png"></a>
     <nav>
-      <ul>
-        <li class="linkN"><a href="../index.html">Inicio</a></li>
-        <li class="linkN"><a href="../pages/nosotros.html">Nosotros</a></li>
-        <li class="linkN"><a href="#">Contacto y Agenda</a></li>
-        <li class="linkN"><a href="../pages/tratamientos.html">Tratamientos</a></li>
-        <li class="linkN"><a href="../pages/opiniones.html">Opiniones</a></li>
+      <nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 links">
+        <li class="nav-item">
+          <a class="nav-link navLinks"  href="../index.html">Inicio</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link navLinks" href="./nosotros.html">Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link navLinks" href="#">Contacto y Agenda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link navLinks" href="./tratamientos.html">Tratamientos</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link navLinks" href="./opiniones.html">Opiniones</a>
+        </li>
       </ul>
+    </div>
+  </div>
+</nav>
     </nav>
+  </div>
   </header>
-  <main>
-    <section class="container-fluid formulario">
+  <main class="principal">
+    <section class="d-flex container-fluid formularios">
+      <div class="col-sm-12 col-md-12 col-lg-12">
       <form class="formulario" action="validar.html">
         <legend class="tituloCONT">Agenda Una Consulta</legend>
         <fieldset>
@@ -87,7 +109,7 @@
           <button type="submit" class="btn btn-primary finForm ">Enviar</button>
           <button type="reset" class="btn btn-primary finForm">Limpiar</button>
         </div>
-
+</div>
 
       </form>
     </section>
