@@ -7,6 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="../assets/images/real_favicon.ico">
   <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/fontawesome-free-6.3.0-web/css/fontawesome.css">
+  <link rel="stylesheet" href="../assets/fontawesome-free-6.3.0-web/css/brands.css">
+  <link rel="stylesheet" href="../assets/fontawesome-free-6.3.0-web/css/regular.css">
+  <link rel="stylesheet" href="../assets/fontawesome-free-6.3.0-web/css/solid.css">
+  <link rel="stylesheet" href="../assets/fontawesome-free-6.3.0-web/css/svg-with-js.css">
+   <link rel="stylesheet" href="../css/all.min.css">
   <link rel="stylesheet" href="../css/styles.css">
   <title>CLINICA MOLARHEALTH</title>
 </head>
@@ -14,102 +20,111 @@
 <body>
   <header>
     <div class="container-fluid cabecera">
-    <a href="../index.html"><img id="logo" src="../assets/images/logomhblanco.png"></a>
-    <nav>
-      <nav class="navbar navbar-expand-lg navbar-light">
-  <div class="container-fluid">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0 links">
-        <li class="nav-item">
-          <a class="nav-link navLinks"  href="../index.html">Inicio</a>
-        </li>
-        <li class="nav-item ">
-          <a class="nav-link navLinks" href="./nosotros.html">Nosotros</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link navLinks" href="#">Contacto y Agenda</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link navLinks" href="./tratamientos.html">Tratamientos</a>
-        </li>
-        <li class="nav-item ">
-          <a class="nav-link navLinks" href="./opiniones.html">Opiniones</a>
-        </li>
-      </ul>
+      <a href="../index.html"><img id="logo" src="../assets/images/logomhblanco.png"></a>
+      <nav>
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 links">
+                <li class="nav-item">
+                  <a class="nav-link navLinks" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link navLinks" href="./nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link navLinks" href="#">Contacto y Agenda</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link navLinks" href="./tratamientos.html">Tratamientos</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link navLinks" href="./opiniones.html">Opiniones</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </nav>
     </div>
-  </div>
-</nav>
-    </nav>
-  </div>
   </header>
   <main class="principal">
     <section class="d-flex container-fluid formularios">
       <div class="col-sm-12 col-md-12 col-lg-12">
-      <form class="formulario" action="validar.html">
-        <legend class="tituloCONT">Agenda Una Consulta</legend>
-        <fieldset>
-          <legend> Datos Personales</legend>
-          <div class="row g-3">
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Nombre" aria-label="First name" required>
+        <form class="formulario" action="validar.html">
+          <legend class="tituloCONT">Agenda Una Consulta</legend>
+          <fieldset>
+            <legend> Datos Personales</legend>
+            <div class="row g-3">
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Nombre" aria-label="First name" required>
+              </div>
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name" required>
+              </div>
             </div>
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name" required>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                value="Masculino">
+              <label class="form-check-label" for="inlineRadio1">Masculino</label>
             </div>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Masculino">
-            <label class="form-check-label" for="inlineRadio1">Masculino</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="Femenino">
-            <label class="form-check-label" for="inlineRadio2">Femenino</label>
-          </div>
-          <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Correo Electrónico</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1"
-              placeholder="ej. juanitoperez@gmail.com" required>
-          </div>
-          <div class="input-group mb-3">
-            <legend>Tel.</legend>
-            <input type="tel" class="form-control" maxlength="17" placeholder="Telefono ej.123456789" required
-              aria-label="Text input with dropdown button">
-          </div>
-        </fieldset>
-        <fieldset>
-          <legend>Sobre la Consulta</legend>
-          <div class="row g-3">
-            <div class="col consultas">
-              <input type="date" class="form-control" placeholder="Fecha de Consulta" aria-label="Fecha">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="Femenino">
+              <label class="form-check-label" for="inlineRadio2">Femenino</label>
             </div>
-            <div class="col consultas">
-              <input type="time" class="form-control" placeholder="Hora de Consulta" aria-label="Hora">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Correo Electrónico</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1"
+                placeholder="ej. juanitoperez@gmail.com" required>
             </div>
-          </div>
-          <select class="form-select consultas" aria-label="Default select example">
-            <option selected>Seleccione su Especialidad</option>
-            <option class="opciones" value="OdontoGeneral">Odontología General</option>
-            <option class="opciones" value="Ortodoncia Invisible">Ortodoncia Invisible</option>
-            <option class="opciones" value="Ortodoncia Trad">Ortodoncia Tradicional</option>
-            <option class="opciones" value="Endodoncia">Endodoncia</option>
-            <option class="opciones" value="Implantes">Implantes</option>
-            <option class="opciones" value="Periodoncia">Periodoncia</option>
-          </select>
-        </fieldset>
+            <div class="input-group mb-3">
+              <legend>Tel.</legend>
+              <input type="tel" class="form-control" maxlength="17" placeholder="Telefono ej.123456789" required
+                aria-label="Text input with dropdown button">
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Sobre la Consulta</legend>
+            <div class="row g-3">
+              <div class="col consultas">
+                <input type="date" class="form-control" placeholder="Fecha de Consulta" aria-label="Fecha">
+              </div>
+              <div class="col consultas">
+                <input type="time" class="form-control" placeholder="Hora de Consulta" aria-label="Hora">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-12">
+                <select class="form-select consultas" aria-label="Default select example">
+                  <option selected>Seleccione su Especialidad</option>
+                  <option class="opciones" value="OdontoGeneral">Odontología General</option>
+                  <option class="opciones" value="Ortodoncia Invisible">Ortodoncia Invisible</option>
+                  <option class="opciones" value="Ortodoncia Trad">Ortodoncia Tradicional</option>
+                  <option class="opciones" value="Endodoncia">Endodoncia</option>
+                  <option class="opciones" value="Implantes">Implantes</option>
+                  <option class="opciones" value="Periodoncia">Periodoncia</option>
+                </select>
+              </div>
+          </fieldset>
 
-        <div class="form-floating consultas">
-          <textarea class="form-control " placeholder="Notas medicas de relevancia" id="floatingTextarea2"
-            style="height: 100px"></textarea>
-          <label class="opciones" for="floatingTextarea2">Notas Medicas de Relevancia</label>
-        </div>
-        <div>
-          <button type="submit" class="btn btn-primary finForm ">Enviar</button>
-          <button type="reset" class="btn btn-primary finForm">Limpiar</button>
-        </div>
-</div>
+          <div class="col-sm-8 col-md-8 col-lg-12">
+            <div class="form-floating consultas">
+              <textarea class="form-control " placeholder="Notas medicas de relevancia" id="floatingTextarea2"
+                style="height: 100px"></textarea>
+              <label class="opciones" for="floatingTextarea2">Notas Medicas de Relevancia</label>
+            </div>
+          </div>
+          <div>
+            <button type="submit" class="btn btn-primary finForm ">Enviar</button>
+            <button type="reset" class="btn btn-primary finForm">Limpiar</button>
+          </div>
+      </div>
+      </div>
 
       </form>
     </section>
@@ -128,21 +143,21 @@
   </main>
 
   <footer class="container-fluid pie">
-    <h2>Seguinos En Las Redes</h2>
     <div class="row">
-      <p>todos los derechos reservados</p>
-      <!-- ACA VAN A IR ICONOS DE LAS REDES SOCIALES-->
-      <div class="col">
-        <p><a href="https://www.instagram.com/">Instagram</a></p>
-      </div>
-      <div class="col">
-        <p><a href="https://twitter.com/?lang=es">Twitter</a></p>
-      </div>
-      <div class="col">
-        <p><a href="https://web.telegram.org/z/">Telegram</a></p>
-      </div>
-    </div>
-  </footer>
+         <h2>Seguinos En Las Redes</h2>
+       <p>todos los derechos reservados</p>
+       <!-- ACA VAN A IR ICONOS DE LAS REDES SOCIALES-->
+       <div class="col">
+         <p><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></p>
+       </div>
+       <div class="col">
+         <p><a href="https://twitter.com/?lang=es"><i class="fa-brands fa-twitter"></i></a></p>
+       </div>
+       <div class="col">
+         <p><a href="https://web.telegram.org/z/"><i class="fa-brands fa-telegram"></i></a></p>
+       </div>
+     </div>
+   </footer>
   <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 

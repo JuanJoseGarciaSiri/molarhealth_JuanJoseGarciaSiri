@@ -100,19 +100,23 @@ height: 12vh;
     align-items: center;
     text-align: center;
     background-color: rgb(20, 18, 155);
+    padding-left: 6vh;
+    padding-right: 6vh;
 }
 .cardOP{
     margin: 5vh;
+
 }
 .OPindex{
     color: rgb(2, 3, 39);
+}
+.imgpaciente{
+    object-fit: cover;
 }
 
 /*CONTACTO*/
 .formularios {
     padding: 15vh;
-    margin-left: 5vh;
-    margin-right: 10vh;
     justify-content: center;
     align-items: center;
     font-size: 1em;
@@ -169,7 +173,9 @@ margin-top: 5vh;
     color: rgb(8, 8, 8);
     text-decoration:double;
 }
-
+.textoCLIN{
+    color: aliceblue;
+}
 .clinica {
     text-align: center;
     padding: 6vh;
@@ -177,7 +183,7 @@ margin-top: 5vh;
 }
 
 .card-img {
-    height: 90vh;
+    height: 70vh;
     width: 100%;
     object-fit: cover;
 }
@@ -198,17 +204,20 @@ margin-top: 5vh;
 }
 
 .mapadesc {
+    text-align: center;
     padding: 5vh;
+    overflow: hidden;
 }
 
 
 /*TRATAMIENTOS*/
 .tratamientos {
     padding:15vh;
-    background-color: blue;
+    background-color: rgb(14, 18, 132);
 }
-.textoContraste{
-    color: black;
+.tratamientosCONT{
+    padding:15vh;
+    background-color: blue;
 }
 .trat{
     padding: 10vh;
@@ -264,10 +273,21 @@ margin-top: 5vh;
     text-align: center;
     height: 25vh;
     width: 100%;
+    overflow-y: hidden;
+    flex-wrap: wrap; bottom: 0px;
 }
-@media screen and (max-width:768px) {
+.foot{
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow-y: hidden;
+    overflow-x: hidden;
+   
+}
+@media screen and (max-width:768px) and (min-width:360px) {
     .fotoscarousel{
         height: 95vh;
+        width:100%;
+
     }
     .navbar{
         width: initial;
@@ -282,9 +302,44 @@ margin-top: 5vh;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 350px;
+        width: 50vh;
         margin-left: 3vh;
-        overflow-y: hidden;
+        overflow: hidden;
+    }
+    .mapadesc{
+        font-size: 1rem;
     }
     
+}
+@media screen and(max-width:360px) and (min-width:300px){
+
+ .imgpaciente{
+        height:80%;
+        overflow: hidden;
+        object-fit: cover;
+    }
+    
+}
+@media screen and (max-width:300px)and(min-width:120px) {
+    .mapa{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        width: 100px;
+        overflow-x: hidden;
+    }
+    .imgpaciente{
+       justify-content: center;
+        overflow: hidden;
+        object-fit: cover;
+    }
+    .cardOP{
+        margin: 2%;
+        height: 55%;
+        overflow-x: hidden;
+        flex-wrap: wrap;
+    }
+    .OPindex{
+        color: rgb(2, 3, 39);
+    }
 }
