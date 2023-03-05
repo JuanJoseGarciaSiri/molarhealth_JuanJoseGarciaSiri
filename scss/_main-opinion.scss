@@ -1,0 +1,50 @@
+/*OPINIONES*/
+.opinionesP {
+    font-size: 0.7em;
+    background-color: $color-secundario;
+    padding: 18vh;
+    text-align: $alineacion;
+    margin-top: 0;
+}
+
+.imagenesOP {
+    height: 100%;
+    width: 100%;
+    padding-top: 0vh;
+
+}
+
+.tituloOP {
+    margin-top: $valoresp-estandar;
+    text-align: $alineacion;
+    flex-wrap: $wrap;
+}
+
+.tarjetaCuerpo {
+    width: 80%;
+
+}
+
+.todasCards {
+    padding: $valoresp-estandar;
+    justify-content: space-around;
+}
+
+.textoOP {
+    color: rgb(0, 0, 0);
+}
+
+.foroOP {
+    background-color: $color-terciario;
+    padding: $valoresp-estandar;
+    text-align: $alineacion;
+}
+
+.datosOP {
+    width: 80%;
+    margin-left: 10vh;
+}
+
+.colFORMOP {
+    overflow: $ocultar;
+}

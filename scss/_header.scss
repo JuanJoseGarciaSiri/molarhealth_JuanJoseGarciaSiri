@@ -1,0 +1,17 @@
+/*ELEMENTOS DEL HEADER*/
+.cabecera {
+    display: flex;
+    justify-content:$espaciado;
+    height:24vh;
+    position: fixed;
+    background-color: $color-prinicipal;
+    z-index: 10;
+}
+a{
+    text-decoration: none;
+}
+#logo {   
+    margin-top: $valoresp-estandar;
+    height: 12vh;
+    }
+    

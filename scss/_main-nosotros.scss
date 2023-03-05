@@ -1,0 +1,59 @@
+/*NOSOTROS*/
+
+
+.doctores {
+    justify-content: $alineacion;
+    align-items: $alineacion;
+    flex-wrap: wrap;
+    background-color: $color-terciario;
+    font-size: 1em;
+    padding-top: 28vh;
+    padding-bottom: 10vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.titulonos{
+padding-top: 15vh;
+}
+.colDocs {
+margin-top: $valoresp-estandar;
+}
+.textoDOCS{
+    color: rgb(8, 8, 8);
+    text-decoration:double;
+}
+.textoCLIN{
+    color: aliceblue;
+}
+.clinica {
+    text-align: $alineacion;
+    padding: $valoresp-estandar;
+    background-color: $color-secundario;
+}
+
+.card-img {
+    height: 70vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.ubicacion {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    text-align: $alineacion;
+    background-color:$color-terciario;
+    justify-content: $alineacion;
+}
+
+.mapa {
+    height: 100%;
+    width: 100%;
+    margin: $valoresp-estandar;
+    overflow: $ocultar;
+}
+
+.mapadesc {
+    text-align: $alineacion;
+    padding: $valoresp-estandar;
+    overflow:$ocultar;
+}

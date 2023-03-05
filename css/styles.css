@@ -6,7 +6,6 @@
   font-size: 1.2rem;
   color: aliceblue; }
 
-/*COMIENZO CON LAS CLASES DE LAS DISTINTAS SECCIONES*/
 /*ELEMENTOS DEL HEADER*/
 .cabecera {
   display: flex;
@@ -20,11 +19,13 @@ a {
   text-decoration: none; }
 
 #logo {
-  margin-top: 4vh;
+  margin-top: 6vh;
   height: 12vh; }
 
-/*INDEX*/
-/*MENU DESPLEGABLE*/
+.principal {
+  background-color: #0b0954;
+  overflow: hidden; }
+
 .navbar {
   padding-top: 6vh;
   background-color: #0b0954; }
@@ -40,10 +41,6 @@ a {
   color: #f1f0fb !important;
   text-decoration: none; }
 
-.principal {
-  background-color: #0b0954;
-  overflow: hidden; }
-
 /*ELEMENTOS DEL MAIN*/
 .fotoscarousel {
   height: 90vh;
@@ -54,8 +51,8 @@ a {
   text-align: center;
   color: aliceblue;
   background-color: #14129b;
-  padding-top: 5vh;
-  padding-bottom: 5vh; }
+  padding-top: 6vh;
+  padding-bottom: 6vh; }
 
 .imagenesAgenda {
   height: 100%;
@@ -91,13 +88,66 @@ a {
   padding-right: 6vh; }
 
 .cardOP {
-  margin: 5vh; }
+  margin: 6vh; }
 
 .OPindex {
   color: #020327; }
 
 .imgpaciente {
   object-fit: cover; }
+
+/*NOSOTROS*/
+.doctores {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #3626c7;
+  font-size: 1em;
+  padding-top: 28vh;
+  padding-bottom: 10vh;
+  overflow-y: hidden;
+  overflow-x: hidden; }
+
+.titulonos {
+  padding-top: 15vh; }
+
+.colDocs {
+  margin-top: 6vh; }
+
+.textoDOCS {
+  color: #080808;
+  text-decoration: double; }
+
+.textoCLIN {
+  color: aliceblue; }
+
+.clinica {
+  text-align: center;
+  padding: 6vh;
+  background-color: #14129b; }
+
+.card-img {
+  height: 70vh;
+  width: 100%;
+  object-fit: cover; }
+
+.ubicacion {
+  flex-wrap: wrap;
+  align-items: flex-start;
+  text-align: center;
+  background-color: #3626c7;
+  justify-content: center; }
+
+.mapa {
+  height: 100%;
+  width: 100%;
+  margin: 6vh;
+  overflow: hidden; }
+
+.mapadesc {
+  text-align: center;
+  padding: 6vh;
+  overflow: hidden; }
 
 /*CONTACTO*/
 .formularios {
@@ -129,69 +179,16 @@ a {
 .consultasEinformes {
   align-items: center;
   justify-content: center;
-  padding: 5vh; }
-
-/*NOSOTROS*/
-.doctores {
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  background-color: #3626c7;
-  font-size: 1em;
-  padding-top: 28vh;
-  padding-bottom: 10vh;
-  overflow-y: hidden;
-  overflow-x: hidden; }
-
-.titulonos {
-  padding-top: 15vh; }
-
-.colDocs {
-  margin-top: 5vh; }
-
-.textoDOCS {
-  color: #080808;
-  text-decoration: double; }
-
-.textoCLIN {
-  color: aliceblue; }
-
-.clinica {
-  text-align: center;
-  padding: 6vh;
-  background-color: #14129b; }
-
-.card-img {
-  height: 70vh;
-  width: 100%;
-  object-fit: cover; }
-
-.ubicacion {
-  flex-wrap: wrap;
-  align-items: flex-start;
-  text-align: center;
-  background-color: #3626c7;
-  justify-content: center; }
-
-.mapa {
-  height: 100%;
-  width: 100%;
-  margin: 4vh;
-  overflow: hidden; }
-
-.mapadesc {
-  text-align: center;
-  padding: 5vh;
-  overflow: hidden; }
+  padding: 6vh; }
 
 /*TRATAMIENTOS*/
 .tratamientos {
   padding: 15vh;
-  background-color: #0e1284; }
+  background-color: #14129b; }
 
 .tratamientosCONT {
   padding: 15vh;
-  background-color: blue; }
+  background-color: #3626c7; }
 
 .trat {
   padding: 10vh; }
@@ -199,7 +196,7 @@ a {
 /*OPINIONES*/
 .opinionesP {
   font-size: 0.7em;
-  background-color: #20146d;
+  background-color: #14129b;
   padding: 18vh;
   text-align: center;
   margin-top: 0; }
@@ -210,7 +207,7 @@ a {
   padding-top: 0vh; }
 
 .tituloOP {
-  margin-top: 4vh;
+  margin-top: 6vh;
   text-align: center;
   flex-wrap: wrap; }
 
@@ -218,15 +215,15 @@ a {
   width: 80%; }
 
 .todasCards {
-  padding: 5vh;
+  padding: 6vh;
   justify-content: space-around; }
 
 .textoOP {
   color: black; }
 
 .foroOP {
-  background-color: #120e8f;
-  padding: 5vh;
+  background-color: #3626c7;
+  padding: 6vh;
   text-align: center; }
 
 .datosOP {
@@ -252,49 +249,3 @@ a {
   flex-wrap: wrap;
   overflow-y: hidden;
   overflow-x: hidden; }
-
-@media screen and (max-width: 768px) and (min-width: 360px) {
-  .fotoscarousel {
-    height: 95vh;
-    width: 100%; }
-  .navbar {
-    width: initial;
-    justify-content: flex-end; }
-  .doctores {
-    align-items: center;
-    padding: 10vh;
-    overflow-x: hidden; }
-  .mapa {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50vh;
-    margin-left: 3vh;
-    overflow: hidden; }
-  .mapadesc {
-    font-size: 1rem; } }
-
-@media screen and (max-width: 360px) and (min-width: 300px) {
-  .imgpaciente {
-    height: 80%;
-    overflow: hidden;
-    object-fit: cover; } }
-
-@media screen and (max-width: 300px) and (min-width: 120px) {
-  .mapa {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    overflow-x: hidden; }
-  .imgpaciente {
-    justify-content: center;
-    overflow: hidden;
-    object-fit: cover; }
-  .cardOP {
-    margin: 2%;
-    height: 55%;
-    overflow-x: hidden;
-    flex-wrap: wrap; }
-  .OPindex {
-    color: #020327; } }

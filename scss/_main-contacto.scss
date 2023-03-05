@@ -1,0 +1,34 @@
+/*CONTACTO*/
+.formularios {
+    padding: 15vh;
+    justify-content: $alineacion;
+    align-items: $alineacion;
+    font-size: 1em;
+    background-color:$color-secundario;
+    overflow-x: $ocultar;
+}
+
+.tituloCONT {
+    font-size: 1.8em;
+    padding-bottom: 1vh;
+}
+.consultas{
+    margin:4vh;
+    width:70%;
+}
+ .opciones{   
+    color: black;
+}
+.finForm{
+    margin-bottom: 3vh;
+}
+.contel {
+    background-color:$color-terciario;  
+    text-align:$alineacion;
+    
+}
+.consultasEinformes{
+    align-items: $alineacion;
+    justify-content: $alineacion;
+    padding: $valoresp-estandar;
+}

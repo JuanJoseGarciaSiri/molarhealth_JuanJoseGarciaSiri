@@ -1,0 +1,61 @@
+/*ELEMENTOS DEL MAIN*/
+
+.fotoscarousel {
+    height: 90vh;
+    object-fit: cover;
+}
+
+.agendaT {
+    display: flex;
+    text-align: $alineacion;
+    color: aliceblue;
+    background-color: $color-secundario;
+    padding-top:$valoresp-estandar;
+    padding-bottom:$valoresp-estandar;
+}
+
+.imagenesAgenda {
+    height: 100%;
+    width: 100%;
+}
+
+.nosotrosT {
+    display: flex;
+    overflow: $ocultar;
+    align-items: $alineacion;
+    justify-content: $alineacion;
+    padding: 10vh;
+    background-image: url(../assets/images/clinicaFOTON.png);
+    background-position: $alineacion;
+    background-size: cover;
+}
+.NOScard{
+    border: 4px;
+    border-color: black;
+    justify-content: $alineacion;
+    overflow-y: $ocultar;
+    overflow-x: $ocultar;
+}
+.txtNOS{
+    color: black;
+}
+
+.opiniones {
+    display: flex;
+    justify-content:$alineacion;
+    align-items: $alineacion;
+    text-align: $alineacion;
+    background-color:$color-secundario;
+    padding-left: $valoresp-estandar;
+    padding-right: $valoresp-estandar;
+}
+.cardOP{
+    margin: $valoresp-estandar;
+
+}
+.OPindex{
+    color: rgb(2, 3, 39);
+}
+.imgpaciente{
+    object-fit: cover;
+}
