@@ -2,15 +2,17 @@
 .pie {
     background-color: $color-prinicipal;
     color: aliceblue;
-    text-align: $alineacion;
-    height: 25vh;
-    width: 100%;
-    overflow-y: $ocultar;
-    flex-wrap: wrap; bottom: 0px;
-}
-.foot{
-    justify-content: $alineacion;
-    flex-wrap: wrap;
-    overflow-y: $ocultar;
-    overflow-x: $ocultar;
+    text-align: map-get($map-flex, center);
+
+    .textoFooter {
+        justify-content: map-get($map-flex, center);
+        flex-wrap: map-get($map-flex, $key: wrap);
+        padding-top: $valoresp-estandar;
+        font-weight: bold;
+
+        .redesFooter {
+            padding-top: $valoresp-estandar;
+            margin-right: 10vh;
+        }
+    }
 }

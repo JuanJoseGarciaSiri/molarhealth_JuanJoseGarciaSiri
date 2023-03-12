@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Clínica dental, pagina principal">
+  <meta name="keywords" content="Salud, clínica, dientes">
   <link rel="icon" href="assets/images/real_favicon.ico">
   <link rel="stylesheet" href="./css/bootstrap.min.css">
   <link rel="stylesheet" href="./assets/fontawesome-free-6.3.0-web/css/fontawesome.css">
@@ -14,14 +16,15 @@
   <link rel="stylesheet" href="./assets/fontawesome-free-6.3.0-web/css/svg-with-js.css">
    <link rel="stylesheet" href="./css/all.min.css">
   <link rel="stylesheet" href="./css/styles.css">
-  <title>CLINICA MOLARHEALTH</title>
+  <title>Molarhealth Principal</title>
 </head>
 
 <body>
   <!-- USO BOOTSTRAP PARA TODO EL SITIO PARA ESTA ENTREGA, EN ENTREGAS FUTURAS USARE COMPONENTES
   DE GRIDS, EL RESPONSIVE TAMBIEN SERA ADAPTADO PARA FUTURAS ENTREGAS-->
   <header>
-    <div class="container-fluid cabecera">
+    <div class="container-fluid fixed-top cabecera">
+     
       <a href="#"><img id="logo" src="./assets/images/logomhblanco.png"></a>
       <nav>
         <nav class="navbar navbar-expand-lg navbar-light">
@@ -143,8 +146,8 @@
           <a href="./pages/opiniones.html">
             <h4 class="tituloOP"> Lee a Nuestros Pacientes!</h4>
           </a>
-       
-          <div class="col-sm-8 col-md-12 col-lg-3 cardOP">
+       <div class="d-flex row">
+          <div class=" col-sm-6 col-md-3 col-lg-3 cardOP">
             <div class="card" style="width: 18rem;">
               <a href="./pages/opiniones.html"><img src="./assets/images/paciente1.jpg" class="card-img-top imgpaciente "
                   alt="paciente1"></a>
@@ -153,7 +156,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-8 col-md-12 col-lg-3 cardOP">
+          <div class="col-sm-6 col-md-3 col-lg-3 cardOP">
             <div class="card" style="width: 18rem;">
               <a href="./pages/opiniones.html"><img src="./assets/images/paciente2.jpg" class="card-img-top imgpaciente"
                   alt="paciente2"></a>
@@ -162,7 +165,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-8 col-md-12 col-lg-3 cardOP">
+          <div class="col-sm-6 col-md-3 col-lg-3 cardOP">
             <div class="card" style="width: 18rem;">
               <a href="./pages/opiniones.html"> <img src="./assets/images/paciente3.jpg" class="card-img-top imgpaciente"
                   alt="paciente3"></a>
@@ -173,23 +176,27 @@
           </div>
         </div>
       </div>
+      </div>
     </section>
   </main>
 
-  <footer class="container-fluid pie">
-   <div class="row">
-        <h2>Seguinos En Las Redes</h2>
-      <p>todos los derechos reservados</p>
-      <!-- ACA VAN A IR ICONOS DE LAS REDES SOCIALES-->
-      <div class="col">
-        <p><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></p>
+
+  <footer class="container-fluid p-4 pie">
+    <div class="d-lg-flex justify-content-between">
+      <div>
+        <span><a href="#"><img id="logo" src="./assets/images/logomhblancoFOOTER.png"></a></span>
       </div>
-      <div class="col">
-        <p><a href="https://twitter.com/?lang=es"><i class="fa-brands fa-twitter"></i></a></p>
+       <div class="textoFooter">
+        <p>Seguinos en Las Redes </p>
       </div>
-      <div class="col">
-        <p><a href="https://web.telegram.org/z/"><i class="fa-brands fa-telegram"></i></a></p>
+      <div>
+        <ul class="d-flex gap-3 list-unstyled redesFooter">
+          <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="https://twitter.com/?lang=es"><i class="fa-brands fa-twitter"></i></a></li>
+          <li><a href="https://web.telegram.org/z/"><i class="fa-brands fa-telegram"></i></a></li>
+        </ul>
       </div>
+     
     </div>
   </footer>
   <script src="./js/bootstrap.bundle.min.js"></script>

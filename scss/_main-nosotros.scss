@@ -1,59 +1,64 @@
 /*NOSOTROS*/
 
+.titulonos {
+    padding-top: 10%;
+}
 
 .doctores {
-    justify-content: $alineacion;
-    align-items: $alineacion;
-    flex-wrap: wrap;
+    justify-content: map-get($map-flex, center);
+    ;
+   @include flexible;
     background-color: $color-terciario;
-    font-size: 1em;
-    padding-top: 28vh;
+    font-size: 1.2rem;
+    padding-top: 20vh;
     padding-bottom: 10vh;
-    overflow-y: hidden;
-    overflow-x: hidden;
+    overflow-y: $ocultar;
+    overflow-x: $ocultar;
+
+    .colDocs {
+        margin-top: $valoresp-estandar;
+
+        .textoDOCS {
+            @include colorTextDark;
+            text-decoration: double;
+        }
+    }
 }
-.titulonos{
-padding-top: 15vh;
-}
-.colDocs {
-margin-top: $valoresp-estandar;
-}
-.textoDOCS{
-    color: rgb(8, 8, 8);
-    text-decoration:double;
-}
-.textoCLIN{
-    color: aliceblue;
-}
+
 .clinica {
-    text-align: $alineacion;
+    text-align: map-get($map-flex, center);
     padding: $valoresp-estandar;
     background-color: $color-secundario;
+
+    .textoCLIN {
+        color: $color-letrasclaras;
+    }
+
+    .card-img {
+        height: 70vh;
+        width: 100%;
+        object-fit: cover;
+    }
 }
 
-.card-img {
-    height: 70vh;
-    width: 100%;
-    object-fit: cover;
-}
+
 
 .ubicacion {
-    flex-wrap: wrap;
-    align-items: flex-start;
-    text-align: $alineacion;
-    background-color:$color-terciario;
-    justify-content: $alineacion;
-}
+    @include flexible;
+    text-align: map-get($map-flex, center);
+    background-color: $color-terciario;
+    justify-content: map-get($map-flex, center);
 
-.mapa {
-    height: 100%;
-    width: 100%;
-    margin: $valoresp-estandar;
-    overflow: $ocultar;
-}
+    .mapadesc {
+        text-align: map-get($map-flex, center);
+        width: 100%;
+        padding: $valoresp-estandar;
+        overflow: $ocultar;
+    }
 
-.mapadesc {
-    text-align: $alineacion;
-    padding: $valoresp-estandar;
-    overflow:$ocultar;
+    .mapa {
+        height: 100%;
+        width: 100%;
+        overflow: $ocultar;
+    }
 }

@@ -1,13 +1,45 @@
-
 /*TRATAMIENTOS*/
 .tratamientos {
-    padding:15vh;
-    background-color:$color-secundario;
+    margin-top: 7vh;
+    padding: 20%;
+    background-color: $color-secundario;
+
+   
 }
-.tratamientosCONT{
-    padding:15vh;
-    background-color:$color-terciario;
+ .trat {
+        padding-top: 5vh;
+    }
+.tratamientosCONT {
+    margin-top: 7vh;
+    padding: 20%;
+    background-color: $color-terciario;
+
+            .textoContraste {
+                padding: 5vh;
+            }
+        .videoTR {
+            height: 100%;
+            width: 100%;
+            padding-bottom: 10vh;
+            padding-left: 3%;
+        }
+
 }
-.trat{
-    padding: 10vh;
+
+///MEDIA QUERIES TRATAMIENTOS///
+@media screen and (max-width:768px) {
+    .tratamientos {
+        flex-direction: map-get($flex-dir, col) !important;
+        overflow: $ocultar;
+    }
+
+    .tratamientosCONT {
+        flex-direction: map-get($flex-dir, col);
+        overflow: $ocultar;
+    }
+
+    .textoContraste {
+        text-align: map-get($map-flex, left);
+        overflow: $ocultar;
+    }
 }

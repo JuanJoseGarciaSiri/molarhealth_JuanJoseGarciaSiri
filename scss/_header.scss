@@ -1,17 +1,22 @@
 /*ELEMENTOS DEL HEADER*/
 .cabecera {
-    display: flex;
-    justify-content:$espaciado;
+    #logo {
+      margin-top: $valoresp-estandar;
+      height: 12vh;
+    }
+
+    display: map-get($map-flex, flex);
+    justify-content:map-get($map-flex, space-evenly);
     height:24vh;
-    position: fixed;
     background-color: $color-prinicipal;
     z-index: 10;
-}
-a{
-    text-decoration: none;
-}
-#logo {   
-    margin-top: $valoresp-estandar;
-    height: 12vh;
+
+    .navbar-toggler {
+      color: $color-letrasclaras !important;
     }
-    
+
+}
+
+a {
+  text-decoration: none;
+}

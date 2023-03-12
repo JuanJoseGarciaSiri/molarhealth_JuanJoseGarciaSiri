@@ -1,50 +1,83 @@
 /*OPINIONES*/
 .opinionesP {
     font-size: 0.7em;
+    justify-content: map-get($map-flex, space-around);
     background-color: $color-secundario;
-    padding: 18vh;
-    text-align: $alineacion;
-    margin-top: 0;
+    text-align: map-get($map-flex, center);
+    padding: 10%;
+    margin-top: 20vh;
+
+    .descripcionOP {
+        font-size: 1.2rem;
+        flex-wrap: map-get($map-flex, wrap);
+    }
+
+    .Cards {
+        justify-content: space-around;
+        align-items: map-get($map-flex, center);
+
+        .tarjetaCuerpo {
+            width: 51vh;
+            justify-content: map-get($map-flex, center);
+            align-items: map-get($map-flex, center);
+            margin: 4vh;
+
+                    .imagenesOP {
+                        height: 50vh;
+                        width: 50vh;
+                        object-fit: cover;
+                    }
+                    .textoOP {
+                        @include colorTextDark;
+                    }
+        }
+    }
 }
-
-.imagenesOP {
-    height: 100%;
-    width: 100%;
-    padding-top: 0vh;
-
-}
-
-.tituloOP {
-    margin-top: $valoresp-estandar;
-    text-align: $alineacion;
-    flex-wrap: $wrap;
-}
-
-.tarjetaCuerpo {
-    width: 80%;
-
-}
-
-.todasCards {
-    padding: $valoresp-estandar;
-    justify-content: space-around;
-}
-
-.textoOP {
-    color: rgb(0, 0, 0);
-}
-
 .foroOP {
-    background-color: $color-terciario;
     padding: $valoresp-estandar;
-    text-align: $alineacion;
-}
-
-.datosOP {
-    width: 80%;
-    margin-left: 10vh;
-}
-
-.colFORMOP {
+    padding-left: 10%;
+    background-color: $color-terciario;
     overflow: $ocultar;
+    flex-wrap: map-get($map-flex, wrap);
+
+}
+///MEDIA QUERIES DE OPINIONES////
+@media screen and (max-width:768px) {
+    .opinionesP {
+        padding: 0%;
+        margin-top: 20vh;
+        margin-right: 20vh;
+        overflow: $ocultar;
+    }
+
+    .columna {
+        padding-right: 15%;
+        overflow-x: $ocultar;
+    }
+
+    .imagenesOP {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        overflow-x: $ocultar;
+    }
+
+    .tarjetaCuerpo {
+        flex-direction: map-get($flex-dir, col);
+        flex-direction: map-get($flex-dir, col);
+        justify-content: map-get($map-flex, flex-start);
+        align-items: map-get($map-flex, flex-start);
+        ;
+        overflow: $ocultar;
+    }
+
+    .Cards {
+        flex-direction: map-get($flex-dir, col);
+        justify-content: map-get($map-flex, flex-start);
+        ;
+        align-items: map-get($map-flex, flex-start);
+        ;
+        overflow-x: $ocultar;
+
+    }
 }

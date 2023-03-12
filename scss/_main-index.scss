@@ -7,55 +7,81 @@
 
 .agendaT {
     display: flex;
-    text-align: $alineacion;
+    text-align: map-get($map-flex, center);
     color: aliceblue;
+    @include flexible;
     background-color: $color-secundario;
-    padding-top:$valoresp-estandar;
-    padding-bottom:$valoresp-estandar;
+    padding-top: $valoresp-estandar;
+    padding-bottom: $valoresp-estandar;
+
+    .imagenesAgenda {
+        height: 100%;
+        width: 100%;
+    }
+
 }
 
-.imagenesAgenda {
-    height: 100%;
-    width: 100%;
-}
+
 
 .nosotrosT {
-    display: flex;
+    display: map-get($map-flex, flex);
     overflow: $ocultar;
-    align-items: $alineacion;
-    justify-content: $alineacion;
+    align-items: map-get($map-flex, center);
+    justify-content: map-get($map-flex, center);
     padding: 10vh;
     background-image: url(../assets/images/clinicaFOTON.png);
-    background-position: $alineacion;
+    background-position: map-get($map-flex, center);
     background-size: cover;
+
+    .txtNOS {
+       @include colorTextDark;
+    }
+
+    .NOScard {
+        border: 4px;
+        border-color: black;
+        justify-content: map-get($map-flex, center);
+        overflow-y: $ocultar;
+        overflow-x: $ocultar;
+    }
 }
-.NOScard{
-    border: 4px;
-    border-color: black;
-    justify-content: $alineacion;
-    overflow-y: $ocultar;
-    overflow-x: $ocultar;
-}
-.txtNOS{
-    color: black;
-}
+
+
 
 .opiniones {
-    display: flex;
-    justify-content:$alineacion;
-    align-items: $alineacion;
-    text-align: $alineacion;
-    background-color:$color-secundario;
-    padding-left: $valoresp-estandar;
-    padding-right: $valoresp-estandar;
-}
-.cardOP{
-    margin: $valoresp-estandar;
+    display: map-get($map-flex, flex);
+    flex-wrap: nowrap;
+    justify-content: map-get($map-flex, center);
+    align-items: map-get($map-flex, center);
+    text-align: map-get($map-flex, center);
+    background-color: $color-secundario;
+    padding: 5%;
+
+    .cardOP {
+        margin: $valoresp-estandar;
+        overflow: $ocultar;
+        width: 49vh;
+        border-radius: 4%;
+
+        .imgpaciente {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+        .OPindex {
+            color: $color-prinicipal;
+            margin-right: 3%;
+        }
+    }
 
 }
-.OPindex{
-    color: rgb(2, 3, 39);
-}
-.imgpaciente{
-    object-fit: cover;
+
+///MEDIA QUERIES INDEX///
+@media screen and (max-width:768px) {
+    .opiniones {
+        flex-direction: map-get($flex-dir, col );
+        overflow-x: $ocultar;
+        overflow-y: $ocultar;
+    }
+
 }

@@ -1,0 +1,8 @@
+@mixin colorTextDark{
+    color:black;
+}
+
+@mixin flexible{
+align-items: center;
+flex-wrap: wrap;
+}

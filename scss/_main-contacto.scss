@@ -1,34 +1,64 @@
 /*CONTACTO*/
 .formularios {
-    padding: 15vh;
-    justify-content: $alineacion;
-    align-items: $alineacion;
+    padding: 12%;
+    justify-content: map-get($map-flex, center);
+    align-items: map-get($map-flex, center);
     font-size: 1em;
-    background-color:$color-secundario;
+    background-color: $color-secundario;
     overflow-x: $ocultar;
+
+    .tituloCONT {
+        font-size: 1.8em;
+        padding-top: 18vh;
+    }
+
+    .MascFem {
+        padding: 5%;
+    }
+
+    .consultas {
+        margin: 4vh;
+        width: 70%;
+
+        .opciones {
+           @include colorTextDark;
+        }
+
+        .notasM {
+            display: map-get($map-flex, wrap);
+            overflow: $ocultar;
+
+        }
+    }
 }
 
-.tituloCONT {
-    font-size: 1.8em;
-    padding-bottom: 1vh;
-}
-.consultas{
-    margin:4vh;
-    width:70%;
-}
- .opciones{   
-    color: black;
-}
-.finForm{
-    margin-bottom: 3vh;
-}
 .contel {
-    background-color:$color-terciario;  
-    text-align:$alineacion;
-    
+    background-color: $color-terciario;
+    text-align: map-get($map-flex, center);
+    ;
+    .consultasEinformes {
+        align-items: map-get($map-flex, center);
+        ;
+        justify-content: map-get($map-flex, center);
+        ;
+        padding: $valoresp-estandar;
+    }
 }
-.consultasEinformes{
-    align-items: $alineacion;
-    justify-content: $alineacion;
-    padding: $valoresp-estandar;
+
+
+//EXTEND
+.boton {
+    padding: 3%;
+    margin: 1%;
+    border: 2px gray;
+}
+
+.boton-enviar {
+    @extend .boton;
+    background-color: rgb(111, 71, 241);
+}
+
+.boton-reset {
+    @extend .boton;
+    background-color: rgb(44, 160, 232);
 }

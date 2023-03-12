@@ -3,7 +3,8 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
   color: aliceblue; }
 
 /*ELEMENTOS DEL HEADER*/
@@ -11,16 +12,16 @@
   display: flex;
   justify-content: space-evenly;
   height: 24vh;
-  position: fixed;
   background-color: #0b0954;
   z-index: 10; }
+  .cabecera #logo {
+    margin-top: 6vh;
+    height: 12vh; }
+  .cabecera .navbar-toggler {
+    color: aliceblue !important; }
 
 a {
   text-decoration: none; }
-
-#logo {
-  margin-top: 6vh;
-  height: 12vh; }
 
 .principal {
   background-color: #0b0954;
@@ -29,17 +30,16 @@ a {
 .navbar {
   padding-top: 6vh;
   background-color: #0b0954; }
+  .navbar .navLinks {
+    background-color: #0b0954;
+    color: #f1f0fb !important;
+    text-decoration: none; }
 
 .links {
   width: 100%;
   background-color: rgba(255, 192, 203, 0);
   justify-content: space-evenly;
   overflow-y: hidden; }
-
-.navLinks {
-  background-color: #0b0954;
-  color: #f1f0fb !important;
-  text-decoration: none; }
 
 /*ELEMENTOS DEL MAIN*/
 .fotoscarousel {
@@ -50,13 +50,14 @@ a {
   display: flex;
   text-align: center;
   color: aliceblue;
+  align-items: center;
+  flex-wrap: wrap;
   background-color: #14129b;
   padding-top: 6vh;
   padding-bottom: 6vh; }
-
-.imagenesAgenda {
-  height: 100%;
-  width: 100%; }
+  .agendaT .imagenesAgenda {
+    height: 100%;
+    width: 100%; }
 
 .nosotrosT {
   display: flex;
@@ -67,185 +68,231 @@ a {
   background-image: url(../assets/images/clinicaFOTON.png);
   background-position: center;
   background-size: cover; }
-
-.NOScard {
-  border: 4px;
-  border-color: black;
-  justify-content: center;
-  overflow-y: hidden;
-  overflow-x: hidden; }
-
-.txtNOS {
-  color: black; }
+  .nosotrosT .txtNOS {
+    color: black; }
+  .nosotrosT .NOScard {
+    border: 4px;
+    border-color: black;
+    justify-content: center;
+    overflow-y: hidden;
+    overflow-x: hidden; }
 
 .opiniones {
   display: flex;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
   text-align: center;
   background-color: #14129b;
-  padding-left: 6vh;
-  padding-right: 6vh; }
+  padding: 5%; }
+  .opiniones .cardOP {
+    margin: 6vh;
+    overflow: hidden;
+    width: 49vh;
+    border-radius: 4%; }
+    .opiniones .cardOP .imgpaciente {
+      object-fit: cover;
+      height: 100%;
+      width: 100%; }
+    .opiniones .cardOP .OPindex {
+      color: #0b0954;
+      margin-right: 3%; }
 
-.cardOP {
-  margin: 6vh; }
-
-.OPindex {
-  color: #020327; }
-
-.imgpaciente {
-  object-fit: cover; }
+@media screen and (max-width: 768px) {
+  .opiniones {
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: hidden; } }
 
 /*NOSOTROS*/
+.titulonos {
+  padding-top: 10%; }
+
 .doctores {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   background-color: #3626c7;
-  font-size: 1em;
-  padding-top: 28vh;
+  font-size: 1.2rem;
+  padding-top: 20vh;
   padding-bottom: 10vh;
   overflow-y: hidden;
   overflow-x: hidden; }
-
-.titulonos {
-  padding-top: 15vh; }
-
-.colDocs {
-  margin-top: 6vh; }
-
-.textoDOCS {
-  color: #080808;
-  text-decoration: double; }
-
-.textoCLIN {
-  color: aliceblue; }
+  .doctores .colDocs {
+    margin-top: 6vh; }
+    .doctores .colDocs .textoDOCS {
+      color: black;
+      text-decoration: double; }
 
 .clinica {
   text-align: center;
   padding: 6vh;
   background-color: #14129b; }
-
-.card-img {
-  height: 70vh;
-  width: 100%;
-  object-fit: cover; }
+  .clinica .textoCLIN {
+    color: aliceblue; }
+  .clinica .card-img {
+    height: 70vh;
+    width: 100%;
+    object-fit: cover; }
 
 .ubicacion {
+  align-items: center;
   flex-wrap: wrap;
-  align-items: flex-start;
   text-align: center;
   background-color: #3626c7;
   justify-content: center; }
-
-.mapa {
-  height: 100%;
-  width: 100%;
-  margin: 6vh;
-  overflow: hidden; }
-
-.mapadesc {
-  text-align: center;
-  padding: 6vh;
-  overflow: hidden; }
+  .ubicacion .mapadesc {
+    text-align: center;
+    width: 100%;
+    padding: 6vh;
+    overflow: hidden; }
+  .ubicacion .mapa {
+    height: 100%;
+    width: 100%;
+    overflow: hidden; }
 
 /*CONTACTO*/
 .formularios {
-  padding: 15vh;
+  padding: 12%;
   justify-content: center;
   align-items: center;
   font-size: 1em;
   background-color: #14129b;
   overflow-x: hidden; }
-
-.tituloCONT {
-  font-size: 1.8em;
-  padding-bottom: 1vh; }
-
-.consultas {
-  margin: 4vh;
-  width: 70%; }
-
-.opciones {
-  color: black; }
-
-.finForm {
-  margin-bottom: 3vh; }
+  .formularios .tituloCONT {
+    font-size: 1.8em;
+    padding-top: 18vh; }
+  .formularios .MascFem {
+    padding: 5%; }
+  .formularios .consultas {
+    margin: 4vh;
+    width: 70%; }
+    .formularios .consultas .opciones {
+      color: black; }
+    .formularios .consultas .notasM {
+      display: wrap;
+      overflow: hidden; }
 
 .contel {
   background-color: #3626c7;
   text-align: center; }
+  .contel .consultasEinformes {
+    align-items: center;
+    justify-content: center;
+    padding: 6vh; }
 
-.consultasEinformes {
-  align-items: center;
-  justify-content: center;
-  padding: 6vh; }
+.boton, .boton-enviar, .boton-reset {
+  padding: 3%;
+  margin: 1%;
+  border: 2px gray; }
+
+.boton-enviar {
+  background-color: #6f47f1; }
+
+.boton-reset {
+  background-color: #2ca0e8; }
 
 /*TRATAMIENTOS*/
 .tratamientos {
-  padding: 15vh;
+  margin-top: 7vh;
+  padding: 20%;
   background-color: #14129b; }
 
-.tratamientosCONT {
-  padding: 15vh;
-  background-color: #3626c7; }
-
 .trat {
-  padding: 10vh; }
+  padding-top: 5vh; }
+
+.tratamientosCONT {
+  margin-top: 7vh;
+  padding: 20%;
+  background-color: #3626c7; }
+  .tratamientosCONT .textoContraste {
+    padding: 5vh; }
+  .tratamientosCONT .videoTR {
+    height: 100%;
+    width: 100%;
+    padding-bottom: 10vh;
+    padding-left: 3%; }
+
+@media screen and (max-width: 768px) {
+  .tratamientos {
+    flex-direction: column !important;
+    overflow: hidden; }
+  .tratamientosCONT {
+    flex-direction: column;
+    overflow: hidden; }
+  .textoContraste {
+    text-align: left;
+    overflow: hidden; } }
 
 /*OPINIONES*/
 .opinionesP {
   font-size: 0.7em;
+  justify-content: space-around;
   background-color: #14129b;
-  padding: 18vh;
   text-align: center;
-  margin-top: 0; }
-
-.imagenesOP {
-  height: 100%;
-  width: 100%;
-  padding-top: 0vh; }
-
-.tituloOP {
-  margin-top: 6vh;
-  text-align: center;
-  flex-wrap: wrap; }
-
-.tarjetaCuerpo {
-  width: 80%; }
-
-.todasCards {
-  padding: 6vh;
-  justify-content: space-around; }
-
-.textoOP {
-  color: black; }
+  padding: 10%;
+  margin-top: 20vh; }
+  .opinionesP .descripcionOP {
+    font-size: 1.2rem;
+    flex-wrap: wrap; }
+  .opinionesP .Cards {
+    justify-content: space-around;
+    align-items: center; }
+    .opinionesP .Cards .tarjetaCuerpo {
+      width: 51vh;
+      justify-content: center;
+      align-items: center;
+      margin: 4vh; }
+      .opinionesP .Cards .tarjetaCuerpo .imagenesOP {
+        height: 50vh;
+        width: 50vh;
+        object-fit: cover; }
+      .opinionesP .Cards .tarjetaCuerpo .textoOP {
+        color: black; }
 
 .foroOP {
-  background-color: #3626c7;
   padding: 6vh;
-  text-align: center; }
+  padding-left: 10%;
+  background-color: #3626c7;
+  overflow: hidden;
+  flex-wrap: wrap; }
 
-.datosOP {
-  width: 80%;
-  margin-left: 10vh; }
-
-.colFORMOP {
-  overflow: hidden; }
+@media screen and (max-width: 768px) {
+  .opinionesP {
+    padding: 0%;
+    margin-top: 20vh;
+    margin-right: 20vh;
+    overflow: hidden; }
+  .columna {
+    padding-right: 15%;
+    overflow-x: hidden; }
+  .imagenesOP {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    overflow-x: hidden; }
+  .tarjetaCuerpo {
+    flex-direction: column;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow: hidden; }
+  .Cards {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow-x: hidden; } }
 
 /* ELEMENTOS DEL FOOTER*/
 .pie {
   background-color: #0b0954;
   color: aliceblue;
-  text-align: center;
-  height: 25vh;
-  width: 100%;
-  overflow-y: hidden;
-  flex-wrap: wrap;
-  bottom: 0px; }
-
-.foot {
-  justify-content: center;
-  flex-wrap: wrap;
-  overflow-y: hidden;
-  overflow-x: hidden; }
+  text-align: center; }
+  .pie .textoFooter {
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 6vh;
+    font-weight: bold; }
+    .pie .textoFooter .redesFooter {
+      padding-top: 6vh;
+      margin-right: 10vh; }

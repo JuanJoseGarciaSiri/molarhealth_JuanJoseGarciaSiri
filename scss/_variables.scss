@@ -2,6 +2,7 @@
 $color-prinicipal:rgb(11, 9, 84);
 $color-secundario: rgb(20, 18, 155);
 $color-terciario: rgb(54, 38, 199);
+$color-letrasclaras: aliceblue;
 
 $alineacion: center;
 $espaciado: space-evenly;
@@ -9,3 +10,22 @@ $ocultar:hidden;
 $wrap: wrap;
 
 $valoresp-estandar:6vh;
+
+
+//MAPAS//
+
+$map-flex:(
+    flex: flex,
+    wrap: wrap,
+    space-evenly: space-evenly,
+    space-between: space-between,
+    space-around: space-around,
+    center: center,
+    flex-start: flex-start, 
+    left:left,
+);
+$flex-dir:(
+    col:column,
+    row:row,
+    col-rev:column-reverse,
+);

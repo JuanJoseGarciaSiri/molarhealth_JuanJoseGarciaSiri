@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Agendar consultas en la clinica">
+  <meta name="keywords" content="Salud, clínica, dientes, agenda, contacto, Fecha">
   <link rel="icon" href="../assets/images/real_favicon.ico">
   <link rel="stylesheet" href="../css/bootstrap.min.css">
   <link rel="stylesheet" href="../assets/fontawesome-free-6.3.0-web/css/fontawesome.css">
@@ -14,12 +16,12 @@
   <link rel="stylesheet" href="../assets/fontawesome-free-6.3.0-web/css/svg-with-js.css">
    <link rel="stylesheet" href="../css/all.min.css">
   <link rel="stylesheet" href="../css/styles.css">
-  <title>CLINICA MOLARHEALTH</title>
+  <title>Contacto</title>
 </head>
 
 <body>
   <header>
-    <div class="container-fluid cabecera">
+    <div  class="container-fluid fixed-top cabecera">
       <a href="../index.html"><img id="logo" src="../assets/images/logomhblanco.png"></a>
       <nav>
         <nav class="navbar navbar-expand-lg navbar-light">
@@ -68,7 +70,7 @@
                 <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name" required>
               </div>
             </div>
-            <div class="form-check form-check-inline">
+            <div class="form-check form-check-inline MascFem">
               <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
                 value="Masculino">
               <label class="form-check-label" for="inlineRadio1">Masculino</label>
@@ -114,14 +116,14 @@
 
           <div class="col-sm-12 col-md-12 col-lg-12">
             <div class="form-floating consultas">
-              <textarea class="form-control " placeholder="Notas medicas de relevancia" id="floatingTextarea2"
+              <textarea class="form-control notasM" placeholder="Notas medicas de relevancia" id="floatingTextarea2"
                 style="height: 100px"></textarea>
               <label class="opciones" for="floatingTextarea2">Notas Medicas de Relevancia</label>
             </div>
           </div>
           <div>
-            <button type="submit" class="btn btn-primary finForm ">Enviar</button>
-            <button type="reset" class="btn btn-primary finForm">Limpiar</button>
+            <button type="submit" class="btn btn-primary finForm boton-enviar">Enviar</button>
+            <button type="reset" class="btn btn-primary finForm boton-reset">Limpiar</button>
           </div>
       </div>
       </div>
@@ -142,21 +144,24 @@
     </section>
   </main>
 
-  <footer class="container-fluid pie">
-    <div class="row">
-         <h2>Seguinos En Las Redes</h2>
-       <p>todos los derechos reservados</p>
-       <div class="col">
-         <p><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></p>
-       </div>
-       <div class="col">
-         <p><a href="https://twitter.com/?lang=es"><i class="fa-brands fa-twitter"></i></a></p>
-       </div>
-       <div class="col">
-         <p><a href="https://web.telegram.org/z/"><i class="fa-brands fa-telegram"></i></a></p>
-       </div>
-     </div>
-   </footer>
+  <footer class="container-fluid p-4 pie">
+    <div class="d-lg-flex justify-content-between">
+      <div>
+        <span><a href="../index.html"><img id="logo" src="../assets/images/logomhblancoFOOTER.png"></a></span>
+      </div>
+       <div class="textoFooter">
+        <p>Seguinos en Las Redes </p>
+      </div>
+      <div>
+        <ul class="d-flex gap-3 list-unstyled redesFooter">
+          <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="https://twitter.com/?lang=es"><i class="fa-brands fa-twitter"></i></a></li>
+          <li><a href="https://web.telegram.org/z/"><i class="fa-brands fa-telegram"></i></a></li>
+        </ul>
+      </div>
+     
+    </div>
+  </footer>
   <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 
