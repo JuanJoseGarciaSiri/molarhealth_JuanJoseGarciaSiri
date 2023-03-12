@@ -8,6 +8,7 @@
   <meta name="description" content="Clínica dental, pagina principal">
   <meta name="keywords" content="Salud, clínica, dientes">
   <link rel="icon" href="assets/images/real_favicon.ico">
+  <link rel="stylesheet" href="./css/aos.css">
   <link rel="stylesheet" href="./css/bootstrap.min.css">
   <link rel="stylesheet" href="./assets/fontawesome-free-6.3.0-web/css/fontawesome.css">
   <link rel="stylesheet" href="./assets/fontawesome-free-6.3.0-web/css/brands.css">
@@ -20,8 +21,6 @@
 </head>
 
 <body>
-  <!-- USO BOOTSTRAP PARA TODO EL SITIO PARA ESTA ENTREGA, EN ENTREGAS FUTURAS USARE COMPONENTES
-  DE GRIDS, EL RESPONSIVE TAMBIEN SERA ADAPTADO PARA FUTURAS ENTREGAS-->
   <header>
     <div class="container-fluid fixed-top cabecera">
      
@@ -32,7 +31,7 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
               aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+              <span class="navbar-toggler-icon tog"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0 links">
@@ -200,5 +199,9 @@
     </div>
   </footer>
   <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>

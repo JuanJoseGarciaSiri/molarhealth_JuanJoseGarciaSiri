@@ -35,6 +35,10 @@ a {
     color: #f1f0fb !important;
     text-decoration: none; }
 
+.tog {
+  background-color: skyblue;
+  border-radius: 20%; }
+
 .links {
   width: 100%;
   background-color: rgba(255, 192, 203, 0);
@@ -88,7 +92,7 @@ a {
   .opiniones .cardOP {
     margin: 6vh;
     overflow: hidden;
-    width: 49vh;
+    width: 48vh;
     border-radius: 4%; }
     .opiniones .cardOP .imgpaciente {
       object-fit: cover;
@@ -194,24 +198,22 @@ a {
 
 /*TRATAMIENTOS*/
 .tratamientos {
-  margin-top: 7vh;
-  padding: 20%;
+  margin-top: 8vh;
+  margin-right: 6vh;
+  padding: 18%;
   background-color: #14129b; }
+  .tratamientos .trat {
+    padding: 6vh; }
+    .tratamientos .trat .txtTRAT {
+      padding: 0; }
 
-.trat {
-  padding-top: 5vh; }
-
-.tratamientosCONT {
-  margin-top: 7vh;
-  padding: 20%;
-  background-color: #3626c7; }
-  .tratamientosCONT .textoContraste {
-    padding: 5vh; }
-  .tratamientosCONT .videoTR {
-    height: 100%;
-    width: 100%;
-    padding-bottom: 10vh;
-    padding-left: 3%; }
+.videoTR {
+  height: 50vh;
+  width: 100%;
+  padding-bottom: 10vh;
+  padding-right: 3%;
+  overflow-x: hidden;
+  margin-right: 4%; }
 
 @media screen and (max-width: 768px) {
   .tratamientos {
