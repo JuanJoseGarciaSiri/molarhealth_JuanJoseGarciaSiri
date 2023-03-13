@@ -7,13 +7,15 @@
     background-color: $color-secundario;
     overflow-x: $ocultar;
 
-    .tituloCONT {
-        font-size: 1.8em;
-        padding-top: 18vh;
-    }
+    .formulario {
+        .tituloCONT {
+            font-size: 1.8em;
+            padding-top: 18vh;
+        }
 
-    .MascFem {
-        padding: 5%;
+        .MascFem {
+            padding: 5%;
+        }
     }
 
     .consultas {
@@ -21,7 +23,7 @@
         width: 70%;
 
         .opciones {
-           @include colorTextDark;
+            @include colorTextDark;
         }
 
         .notasM {
@@ -35,13 +37,15 @@
 .contel {
     background-color: $color-terciario;
     text-align: map-get($map-flex, center);
-    ;
-    .consultasEinformes {
-        align-items: map-get($map-flex, center);
-        ;
-        justify-content: map-get($map-flex, center);
-        ;
-        padding: $valoresp-estandar;
+
+    .row {
+        .consultasEinformes {
+            align-items: map-get($map-flex, center);
+
+            justify-content: map-get($map-flex, center);
+
+            padding: $valoresp-estandar;
+        }
     }
 }
 
@@ -51,6 +55,11 @@
     padding: 3%;
     margin: 1%;
     border: 2px gray;
+    &:hover{
+        transform: scale(1.02);
+        overflow: $ocultar;
+        transition: all 0.5s;
+    }
 }
 
 .boton-enviar {

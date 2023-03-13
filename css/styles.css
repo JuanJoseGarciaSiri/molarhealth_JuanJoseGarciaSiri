@@ -17,8 +17,31 @@
   .cabecera #logo {
     margin-top: 6vh;
     height: 12vh; }
-  .cabecera .navbar-toggler {
-    color: aliceblue !important; }
+    .cabecera #logo:hover {
+      transform: scale(1.15);
+      overflow: hidden;
+      transition: all 0.5s; }
+  .cabecera .navbar {
+    padding-top: 6vh;
+    background-color: #0b0954; }
+    .cabecera .navbar .container-fluid .navbar-toggler {
+      color: aliceblue !important; }
+      .cabecera .navbar .container-fluid .navbar-toggler .tog {
+        background-color: skyblue;
+        border-radius: 20%; }
+    .cabecera .navbar .container-fluid .navbar-collapse .links {
+      width: 100%;
+      background-color: #0f0f0e;
+      justify-content: space-evenly;
+      overflow: hidden; }
+      .cabecera .navbar .container-fluid .navbar-collapse .links .nav-item:hover {
+        transform: scale(1.02);
+        overflow: hidden;
+        transition: 0.5s; }
+      .cabecera .navbar .container-fluid .navbar-collapse .links .nav-item .navLinks {
+        background-color: #0b0954;
+        color: #f1f0fb !important;
+        text-decoration: none; }
 
 a {
   text-decoration: none; }
@@ -27,26 +50,8 @@ a {
   background-color: #0b0954;
   overflow: hidden; }
 
-.navbar {
-  padding-top: 6vh;
-  background-color: #0b0954; }
-  .navbar .navLinks {
-    background-color: #0b0954;
-    color: #f1f0fb !important;
-    text-decoration: none; }
-
-.tog {
-  background-color: skyblue;
-  border-radius: 20%; }
-
-.links {
-  width: 100%;
-  background-color: rgba(255, 192, 203, 0);
-  justify-content: space-evenly;
-  overflow-y: hidden; }
-
 /*ELEMENTOS DEL MAIN*/
-.fotoscarousel {
+.galeriaIndex .slider .carousel-inner .fotoscarousel {
   height: 90vh;
   object-fit: cover; }
 
@@ -59,9 +64,13 @@ a {
   background-color: #14129b;
   padding-top: 6vh;
   padding-bottom: 6vh; }
-  .agendaT .imagenesAgenda {
+  .agendaT .row .colimagen .imagenesAgenda {
     height: 100%;
     width: 100%; }
+    .agendaT .row .colimagen .imagenesAgenda:hover {
+      transform: scale(1.03);
+      overflow: hidden;
+      transition: all 0.5s; }
 
 .nosotrosT {
   display: flex;
@@ -72,14 +81,18 @@ a {
   background-image: url(../assets/images/clinicaFOTON.png);
   background-position: center;
   background-size: cover; }
-  .nosotrosT .txtNOS {
-    color: black; }
   .nosotrosT .NOScard {
     border: 4px;
     border-color: black;
     justify-content: center;
     overflow-y: hidden;
     overflow-x: hidden; }
+    .nosotrosT .NOScard:hover {
+      transform: scale(1.15);
+      overflow: hidden;
+      transition: all 0.5s; }
+    .nosotrosT .NOScard .row .card-body .txtNOS {
+      color: black; }
 
 .opiniones {
   display: flex;
@@ -89,18 +102,22 @@ a {
   text-align: center;
   background-color: #14129b;
   padding: 5%; }
-  .opiniones .cardOP {
+  .opiniones .row .cardOP {
     margin: 6vh;
     overflow: hidden;
     width: 48vh;
     border-radius: 4%; }
-    .opiniones .cardOP .imgpaciente {
+    .opiniones .row .cardOP .card .imgpaciente {
       object-fit: cover;
       height: 100%;
       width: 100%; }
-    .opiniones .cardOP .OPindex {
+    .opiniones .row .cardOP .card .card-body .OPindex {
       color: #0b0954;
       margin-right: 3%; }
+    .opiniones .row .cardOP .card:hover {
+      transform: scale(1.15);
+      overflow: hidden;
+      transition: all 0.5s; }
 
 @media screen and (max-width: 768px) {
   .opiniones {
@@ -122,9 +139,9 @@ a {
   padding-bottom: 10vh;
   overflow-y: hidden;
   overflow-x: hidden; }
-  .doctores .colDocs {
+  .doctores .row .colDocs {
     margin-top: 6vh; }
-    .doctores .colDocs .textoDOCS {
+    .doctores .row .colDocs .docs .card-body .textoDOCS {
       color: black;
       text-decoration: double; }
 
@@ -134,7 +151,7 @@ a {
   background-color: #14129b; }
   .clinica .textoCLIN {
     color: aliceblue; }
-  .clinica .card-img {
+  .clinica .slide .carousel-inner .carousel-item .card-img {
     height: 70vh;
     width: 100%;
     object-fit: cover; }
@@ -145,12 +162,12 @@ a {
   text-align: center;
   background-color: #3626c7;
   justify-content: center; }
-  .ubicacion .mapadesc {
+  .ubicacion .row .mapadesc {
     text-align: center;
     width: 100%;
     padding: 6vh;
     overflow: hidden; }
-  .ubicacion .mapa {
+  .ubicacion .row .mapa {
     height: 100%;
     width: 100%;
     overflow: hidden; }
@@ -163,10 +180,10 @@ a {
   font-size: 1em;
   background-color: #14129b;
   overflow-x: hidden; }
-  .formularios .tituloCONT {
+  .formularios .formulario .tituloCONT {
     font-size: 1.8em;
     padding-top: 18vh; }
-  .formularios .MascFem {
+  .formularios .formulario .MascFem {
     padding: 5%; }
   .formularios .consultas {
     margin: 4vh;
@@ -180,7 +197,7 @@ a {
 .contel {
   background-color: #3626c7;
   text-align: center; }
-  .contel .consultasEinformes {
+  .contel .row .consultasEinformes {
     align-items: center;
     justify-content: center;
     padding: 6vh; }
@@ -189,6 +206,10 @@ a {
   padding: 3%;
   margin: 1%;
   border: 2px gray; }
+  .boton:hover, .boton-enviar:hover, .boton-reset:hover {
+    transform: scale(1.02);
+    overflow: hidden;
+    transition: all 0.5s; }
 
 .boton-enviar {
   background-color: #6f47f1; }
@@ -197,17 +218,17 @@ a {
   background-color: #2ca0e8; }
 
 /*TRATAMIENTOS*/
-.tratamientos {
+.row .tratamientos {
   margin-top: 8vh;
   margin-right: 6vh;
   padding: 18%;
   background-color: #14129b; }
-  .tratamientos .trat {
+  .row .tratamientos .trat {
     padding: 6vh; }
-    .tratamientos .trat .txtTRAT {
+    .row .tratamientos .trat .txtTRAT {
       padding: 0; }
 
-.videoTR {
+.row .videoTR {
   height: 50vh;
   width: 100%;
   padding-bottom: 10vh;
@@ -241,15 +262,15 @@ a {
     justify-content: space-around;
     align-items: center; }
     .opinionesP .Cards .tarjetaCuerpo {
-      width: 51vh;
+      width: 100%;
       justify-content: center;
       align-items: center;
       margin: 4vh; }
       .opinionesP .Cards .tarjetaCuerpo .imagenesOP {
-        height: 50vh;
-        width: 50vh;
+        height: 100;
+        width: 100;
         object-fit: cover; }
-      .opinionesP .Cards .tarjetaCuerpo .textoOP {
+      .opinionesP .Cards .tarjetaCuerpo .card-body .textoOP {
         color: black; }
 
 .foroOP {
@@ -259,37 +280,39 @@ a {
   overflow: hidden;
   flex-wrap: wrap; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (min-width: 100px) {
   .opinionesP {
     padding: 0%;
     margin-top: 20vh;
     margin-right: 20vh;
     overflow: hidden; }
-  .columna {
-    padding-right: 15%;
-    overflow-x: hidden; }
-  .imagenesOP {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    overflow-x: hidden; }
-  .tarjetaCuerpo {
-    flex-direction: column;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    overflow: hidden; }
-  .Cards {
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    overflow-x: hidden; } }
+    .opinionesP .Cards {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      overflow-x: hidden; }
+      .opinionesP .Cards .columna {
+        padding-right: 15%;
+        overflow-x: hidden; }
+        .opinionesP .Cards .columna .tarjetaCuerpo {
+          flex-direction: column;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+          overflow: hidden; }
+          .opinionesP .Cards .columna .tarjetaCuerpo .imagenesOP {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            overflow-x: hidden; } }
 
 /* ELEMENTOS DEL FOOTER*/
 .pie {
   background-color: #0b0954;
   color: aliceblue;
   text-align: center; }
+  .pie .logoFOOT:hover {
+    transform: rotate(350deg); }
   .pie .textoFooter {
     justify-content: center;
     flex-wrap: wrap;

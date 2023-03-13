@@ -1,27 +1,31 @@
 /*TRATAMIENTOS*/
-.tratamientos {
-    margin-top: 8vh;
-    margin-right: $valoresp-estandar;
-    padding: 18%;
-    background-color: $color-secundario;
+.row {
+    .tratamientos {
+        margin-top: 8vh;
+        margin-right: $valoresp-estandar;
+        padding: 18%;
+        background-color: $color-secundario;
 
-    .trat {
-        padding: $valoresp-estandar;
-        .txtTRAT{
-           padding:0 ;
+        .trat {
+            padding: $valoresp-estandar;
+
+            .txtTRAT {
+                padding: 0;
+            }
         }
-    
     }
 
-}
     .videoTR {
-            height: 50vh;
-            width: 100%;
-            padding-bottom: 10vh;
-            padding-right: 3%;
-            overflow-x: $ocultar;
-            margin-right: 4%;
-        }
+        height: 50vh;
+        width: 100%;
+        padding-bottom: 10vh;
+        padding-right: 3%;
+        overflow-x: $ocultar;
+        margin-right: 4%;
+    }
+}
+
+
 
 ///MEDIA QUERIES TRATAMIENTOS///
 @media screen and (max-width:768px) {

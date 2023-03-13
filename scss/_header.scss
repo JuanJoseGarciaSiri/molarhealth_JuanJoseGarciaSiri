@@ -1,20 +1,64 @@
 /*ELEMENTOS DEL HEADER*/
 .cabecera {
-    #logo {
-      margin-top: $valoresp-estandar;
-      height: 12vh;
+
+  display: map-get($map-flex, flex);
+  justify-content: map-get($map-flex, space-evenly);
+  height: 24vh;
+  background-color: $color-prinicipal;
+  z-index: 10;
+
+  #logo {
+    margin-top: $valoresp-estandar;
+    height: 12vh;
+
+    &:hover {
+      transform: scale(1.15);
+      overflow: $ocultar;
+      transition: all 0.5s;
     }
+  }
 
-    display: map-get($map-flex, flex);
-    justify-content:map-get($map-flex, space-evenly);
-    height:24vh;
-    background-color: $color-prinicipal;
-    z-index: 10;
+  .navbar {
+    padding-top: $valoresp-estandar;
+    background-color: $color-prinicipal ;
 
-    .navbar-toggler {
-      color: $color-letrasclaras !important;
+    .container-fluid {
+
+      .navbar-toggler {
+        color: $color-letrasclaras !important;
+
+        .tog {
+          background-color: skyblue;
+          border-radius: 20%;
+        }
+      }
+
+      .navbar-collapse {
+        .links {
+          width: 100%;
+          background-color: rgb(15, 15, 14);
+          justify-content: map-get($map-flex, space-evenly);
+          overflow: $ocultar;
+
+
+
+          .nav-item {
+            &:hover {
+              transform: scale(1.02);
+              overflow: $ocultar;
+              transition: 0.5s;
+            }
+
+            .navLinks {
+              background-color: $color-prinicipal;
+              color: rgb(241, 240, 251) !important;
+              text-decoration: none;
+            }
+          }
+        }
+      }
     }
-
+  }
 }
 
 a {

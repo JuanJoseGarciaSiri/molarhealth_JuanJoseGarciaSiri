@@ -6,8 +6,7 @@
 
 .doctores {
     justify-content: map-get($map-flex, center);
-    ;
-   @include flexible;
+    @include flexible;
     background-color: $color-terciario;
     font-size: 1.2rem;
     padding-top: 20vh;
@@ -15,14 +14,22 @@
     overflow-y: $ocultar;
     overflow-x: $ocultar;
 
-    .colDocs {
-        margin-top: $valoresp-estandar;
+    .row {
+        .colDocs {
+            margin-top: $valoresp-estandar;
 
-        .textoDOCS {
-            @include colorTextDark;
-            text-decoration: double;
+            .docs {
+                .card-body {
+                    .textoDOCS {
+                        @include colorTextDark;
+                        text-decoration: double;
+                    }
+                }
+            }
+
         }
     }
+
 }
 
 .clinica {
@@ -34,10 +41,16 @@
         color: $color-letrasclaras;
     }
 
-    .card-img {
-        height: 70vh;
-        width: 100%;
-        object-fit: cover;
+    .slide {
+        .carousel-inner {
+            .carousel-item {
+                .card-img {
+                    height: 70vh;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
     }
 }
 
@@ -49,16 +62,22 @@
     background-color: $color-terciario;
     justify-content: map-get($map-flex, center);
 
-    .mapadesc {
-        text-align: map-get($map-flex, center);
-        width: 100%;
-        padding: $valoresp-estandar;
-        overflow: $ocultar;
+
+    .row {
+
+        .mapadesc {
+            text-align: map-get($map-flex, center);
+            width: 100%;
+            padding: $valoresp-estandar;
+            overflow: $ocultar;
+        }
+
+        .mapa {
+            height: 100%;
+            width: 100%;
+            overflow: $ocultar;
+        }
     }
 
-    .mapa {
-        height: 100%;
-        width: 100%;
-        overflow: $ocultar;
-    }
+
 }

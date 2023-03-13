@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="./assets/fontawesome-free-6.3.0-web/css/regular.css">
   <link rel="stylesheet" href="./assets/fontawesome-free-6.3.0-web/css/solid.css">
   <link rel="stylesheet" href="./assets/fontawesome-free-6.3.0-web/css/svg-with-js.css">
-   <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/all.min.css">
   <link rel="stylesheet" href="./css/styles.css">
   <title>Molarhealth Principal</title>
 </head>
@@ -23,7 +23,7 @@
 <body>
   <header>
     <div class="container-fluid fixed-top cabecera">
-     
+
       <a href="#"><img id="logo" src="./assets/images/logomhblanco.png"></a>
       <nav>
         <nav class="navbar navbar-expand-lg navbar-light">
@@ -60,8 +60,8 @@
   <main class="container-fluid principal">
     <!--EMPIEZA CARROUSEL DE TRATAMIENTOS-->
     <!-- ETIQUETAS EN FOTOS SERAN PERFECCIONADAS-->
-    <section>
-      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <section class="galeriaIndex">
+      <div id="carouselExampleCaptions" class="carousel slide slider" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
             aria-current="true" aria-label="Slide 1"></button>
@@ -82,7 +82,7 @@
           <div class="carousel-item fotoscarousel">
             <a href="./pages/tratamientos.html"><img src="./assets/images/APARATOS NORMALES CON ETIQ.jpg"
                 class="d-block w-100 fotoscarousel" alt="aparatos"></a>
-           
+
           </div>
           <div class="carousel-item fotoscarousel">
             <a href="./pages/tratamientos.html"><img src="./assets/images/IMPLANTES CON ETIQQQQQQQQ.jpg"
@@ -91,7 +91,7 @@
           <div class="carousel-item fotoscarousel">
             <a href="./pages/tratamientos.html"><img src="./assets/images/ENDODONCI ACON ETIQUETAAAAAAAAAAAAA.jpg"
                 class="d-block w-100 fotoscarousel" alt="endodoncia"></a>
-        
+
           </div>
           <div class="carousel-item fotoscarousel">
             <a href="./pages/tratamientos.html"><img src="./assets/images/PERIODONCIA ETIQUETAAAAAAAAAAAAAA.jpg"
@@ -113,26 +113,29 @@
     <section>
       <div class="container-fluid agendaT">
         <div class="row">
-          <div class="col-sm-12 col-md-6">
+          <div class="col-sm-12 col-md-6" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
             <h2><a href="./pages/contacto.html">Agenda Tu Consulta</a></h2>
             <a href="./pages/contacto.html">
               <h2> Tu Salud Dental Optima A Un Par De Clicks De Distancia</h2>
             </a>
           </div>
           <!-- IMAGENES CORRESPONDIENTES -->
-          <div class="col-sm-12 col-md-6">
+          <div class="col-sm-12 col-md-6 colimagen" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
             <a href="./pages/contacto.html"><img class="imagenesAgenda" src="./assets/images/cepillado.jpg"></a>
           </div>
         </div>
       </div>
     </section>
     <section>
-      <div class="nosotrosT">
+      <div class="nosotrosT" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="800">
         <div class="card mb-3 col-sm-12 col-md-8 col-lg-4 NOScard">
           <div class="row">
-           <a href="./pages/nosotros.html"> <img src="./assets/images/clinica3CAROUSEL.png" class="card-img-top imagenesNosotros" alt="clinica"></a>
+            <a href="./pages/nosotros.html"> <img src="./assets/images/clinica3CAROUSEL.png"
+                class="card-img-top imagenesNosotros" alt="clinica"></a>
             <div class="card-body">
-              <a href="./pages/nosotros.html"> <h2 class="card-title txtNOS ">¿Quiénes somos?</h2></a>
+              <a href="./pages/nosotros.html">
+                <h2 class="card-title txtNOS ">¿Quiénes somos?</h2>
+              </a>
               <p class="card-text txtNOS">Conoce mas detalles sobre nuestra histórica clínica montevideana.</p>
             </div>
           </div>
@@ -141,40 +144,40 @@
     </section>
     <section>
       <div class="container-fluid opiniones">
-          <div class="row">
+        <div class="row">
           <a href="./pages/opiniones.html">
-            <h4 class="tituloOP"> Lee a Nuestros Pacientes!</h4>
+            <h4 class="tituloOP" data-aos="fade-right"> Lee a Nuestros Pacientes!</h4>
           </a>
-       <div class="d-flex row">
-          <div class=" col-sm-6 col-md-3 col-lg-3 cardOP">
-            <div class="card" style="width: 18rem;">
-              <a href="./pages/opiniones.html"><img src="./assets/images/paciente1.jpg" class="card-img-top imgpaciente "
-                  alt="paciente1"></a>
-              <div class="card-body">
-                <p class="card-text OPindex">Ven a conocer mi experiencia!</p>
+          <div class="d-flex row">
+            <div class=" col-sm-6 col-md-3 col-lg-3 cardOP" data-aos="flip-up"data-aos-duration="1000">
+              <div class="card" style="width: 18rem;">
+                <a href="./pages/opiniones.html"><img src="./assets/images/paciente1.jpg"
+                    class="card-img-top imgpaciente " alt="paciente1"></a>
+                <div class="card-body">
+                  <p class="card-text OPindex">Ven a conocer mi experiencia!</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-sm-6 col-md-3 col-lg-3 cardOP">
-            <div class="card" style="width: 18rem;">
-              <a href="./pages/opiniones.html"><img src="./assets/images/paciente2.jpg" class="card-img-top imgpaciente"
-                  alt="paciente2"></a>
-              <div class="card-body">
-                <p class="card-text OPindex">Te cuento un poco como fue!</p>
+            <div class="col-sm-6 col-md-3 col-lg-3 cardOP"data-aos="flip-up"data-aos-duration="1000">
+              <div class="card" style="width: 18rem;">
+                <a href="./pages/opiniones.html"><img src="./assets/images/paciente2.jpg"
+                    class="card-img-top imgpaciente" alt="paciente2"></a>
+                <div class="card-body">
+                  <p class="card-text OPindex">Te cuento un poco como fue!</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-sm-6 col-md-3 col-lg-3 cardOP">
-            <div class="card" style="width: 18rem;">
-              <a href="./pages/opiniones.html"> <img src="./assets/images/paciente3.jpg" class="card-img-top imgpaciente"
-                  alt="paciente3"></a>
-              <div class="card-body">
-                <p class="card-text OPindex">Estas en buenas manos!</p>
+            <div class="col-sm-6 col-md-3 col-lg-3 cardOP" data-aos="flip-up"data-aos-duration="1000">
+              <div class="card" style="width: 18rem;">
+                <a href="./pages/opiniones.html"> <img src="./assets/images/paciente3.jpg"
+                    class="card-img-top imgpaciente" alt="paciente3"></a>
+                <div class="card-body">
+                  <p class="card-text OPindex">Estas en buenas manos!</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
       </div>
     </section>
   </main>
@@ -183,9 +186,9 @@
   <footer class="container-fluid p-4 pie">
     <div class="d-lg-flex justify-content-between">
       <div>
-        <span><a href="#"><img id="logo" src="./assets/images/logomhblancoFOOTER.png"></a></span>
+        <span><a href="#"><img id="logo" class="logoFOOT"src="./assets/images/logomhblancoFOOTER.png"></a></span>
       </div>
-       <div class="textoFooter">
+      <div class="textoFooter">
         <p>Seguinos en Las Redes </p>
       </div>
       <div>
@@ -195,7 +198,7 @@
           <li><a href="https://web.telegram.org/z/"><i class="fa-brands fa-telegram"></i></a></li>
         </ul>
       </div>
-     
+
     </div>
   </footer>
   <script src="./js/bootstrap.bundle.min.js"></script>
@@ -204,4 +207,5 @@
     AOS.init();
   </script>
 </body>
+
 </html>

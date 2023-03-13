@@ -1,8 +1,14 @@
 /*ELEMENTOS DEL MAIN*/
+.galeriaIndex {
+    .slider {
+        .carousel-inner {
+            .fotoscarousel {
+                height: 90vh;
+                object-fit: cover;
+            }
+        }
+    }
 
-.fotoscarousel {
-    height: 90vh;
-    object-fit: cover;
 }
 
 .agendaT {
@@ -14,13 +20,21 @@
     padding-top: $valoresp-estandar;
     padding-bottom: $valoresp-estandar;
 
-    .imagenesAgenda {
-        height: 100%;
-        width: 100%;
+    .row {
+        .colimagen {
+            .imagenesAgenda {
+                height: 100%;
+                width: 100%;
+                &:hover{
+                    transform: scale(1.03);
+                    overflow: $ocultar;
+                    transition: all 0.5s;
+                }
+            }
+
+        }
     }
-
 }
-
 
 
 .nosotrosT {
@@ -33,9 +47,7 @@
     background-position: map-get($map-flex, center);
     background-size: cover;
 
-    .txtNOS {
-       @include colorTextDark;
-    }
+
 
     .NOScard {
         border: 4px;
@@ -43,6 +55,18 @@
         justify-content: map-get($map-flex, center);
         overflow-y: $ocultar;
         overflow-x: $ocultar;
+        &:hover{
+            transform: scale(1.15);
+            overflow: $ocultar;
+            transition: all 0.5s;
+        }
+        .row {
+            .card-body {
+                .txtNOS {
+                    @include colorTextDark;
+                }
+            }
+        }
     }
 }
 
@@ -57,21 +81,38 @@
     background-color: $color-secundario;
     padding: 5%;
 
-    .cardOP {
-        margin: $valoresp-estandar;
-        overflow: $ocultar;
-        width: 48vh;
-        border-radius: 4%;
+    .row {
+        .cardOP {
+            margin: $valoresp-estandar;
+            overflow: $ocultar;
+            width: 48vh;
+            border-radius: 4%;
 
-        .imgpaciente {
-            object-fit: cover;
-            height: 100%;
-            width: 100%;
+            .card {
+                .imgpaciente {
+                    object-fit: cover;
+                    height: 100%;
+                    width: 100%;
+                }
+
+                .card-body {
+                    .OPindex {
+                        color: $color-prinicipal;
+                        margin-right: 3%;
+                    }
+               
+                } &:hover{
+                    transform: scale(1.15);
+                    overflow: $ocultar;
+                    transition: all 0.5s;
+                }
+            }
         }
-        .OPindex {
-            color: $color-prinicipal;
-            margin-right: 3%;
-        }
+
+
+
+
+
     }
 
 }
@@ -79,7 +120,7 @@
 ///MEDIA QUERIES INDEX///
 @media screen and (max-width:768px) {
     .opiniones {
-        flex-direction: map-get($flex-dir, col );
+        flex-direction: map-get($flex-dir, col);
         overflow-x: $ocultar;
         overflow-y: $ocultar;
     }

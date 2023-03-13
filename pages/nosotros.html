@@ -15,14 +15,14 @@
   <link rel="stylesheet" href="../assets/fontawesome-free-6.3.0-web/css/regular.css">
   <link rel="stylesheet" href="../assets/fontawesome-free-6.3.0-web/css/solid.css">
   <link rel="stylesheet" href="../assets/fontawesome-free-6.3.0-web/css/svg-with-js.css">
-   <link rel="stylesheet" href="../css/all.min.css">
+  <link rel="stylesheet" href="../css/all.min.css">
   <link rel="stylesheet" href="../css/styles.css">
   <title>Nosotros</title>
 </head>
 
 <body>
   <header>
-    <div  class="container-fluid fixed-top cabecera">
+    <div class="container-fluid fixed-top cabecera">
       <a href="../index.html"><img id="logo" src="../assets/images/logomhblanco.png"></a>
       <nav>
         <nav class="navbar navbar-expand-lg navbar-light">
@@ -58,8 +58,9 @@
   </header>
   <main class="container-fluid principal">
     <section>
-      <div class="d-flex container-fluid doctores">
-        <div class="row titulonos">
+      <div class="d-flex container-fluid doctores " data-aos="fade-left" data-aos-anchor="#example-anchor"
+        data-aos-offset="500" data-aos-duration="800">
+        <div class="row titulonos"data-aos="fade-left" data-aos-duration="2000">
           <h1>Conoce a Nuestro Equipo!</h1>
         </div>
         <div class="row">
@@ -90,7 +91,7 @@
         </div>
       </div>
     </section>
-    <section class="container-fluid clinica">
+    <section class="container-fluid clinica"data-aos="fade-right"data-aos-duration="1500">
       <p class=" textoCLIN">Nuestra clínica fue fundada en el año 1999 en la bella zona de Buceo en Montevideo, Uruguay,
         desde ese
         momento
@@ -112,16 +113,15 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="../assets/images/clinicaCAROUSELFINAL.png" class="d-block w-100 fotoscarousel" alt="clinica">
+            <img src="../assets/images/clinicaCAROUSELFINAL.png" class="d-block w-100 card-img" alt="clinica">
           </div>
           <div class="carousel-item">
-            <img src="../assets/images/pexels-daniel-frank-287237.jpg" class="d-block w-100 fotoscarousel"
+            <img src="../assets/images/pexels-daniel-frank-287237.jpg" class="d-block w-100 card-img"
               alt="clinica2">
 
           </div>
           <div class="carousel-item">
-            <img src="../assets/images/sala de espera.jpg" class="d-block w-100 fotoscarousel"
-              alt="clinica3">
+            <img src="../assets/images/sala de espera.jpg" class="d-block w-100 card-img" alt="clinica3">
 
           </div>
         </div>
@@ -137,11 +137,12 @@
         </button>
       </div>
     </section>
-    <section class="d-flex container-fluid ubicacion">
+    <section class="d-flex container-fluid ubicacion"data-aos="fade-left" data-aos-duration="1000">
       <div class="row">
         <div class="col-sm-12 col-md-5 col-lg-12 mapadesc">
           <h2>¿Donde Estamos?</h2>
-          <p class="mapadesc">Nos ubicamos sobre la siempre concurrida Avenida Italia, en su cruce con la calle Comercio, un punto muy
+          <p class="mapadesc">Nos ubicamos sobre la siempre concurrida Avenida Italia, en su cruce con la calle
+            Comercio, un punto muy
             transitado y característico de la ciudad de Montevideo, en el límite entre los barrios de Buceo y Unión.
           </p>
         </div>
@@ -164,9 +165,9 @@
   <footer class="container-fluid p-4 pie">
     <div class="d-lg-flex justify-content-between">
       <div>
-        <span><a href="../index.html"><img id="logo" src="../assets/images/logomhblancoFOOTER.png"></a></span>
+        <span><a href="../index.html"><img id="logo" class="logoFOOT"src="../assets/images/logomhblancoFOOTER.png"></a></span>
       </div>
-       <div class="textoFooter">
+      <div class="textoFooter">
         <p>Seguinos en Las Redes </p>
       </div>
       <div>
@@ -176,7 +177,7 @@
           <li><a href="https://web.telegram.org/z/"><i class="fa-brands fa-telegram"></i></a></li>
         </ul>
       </div>
-     
+
     </div>
   </footer>
   <script src="../js/bootstrap.bundle.min.js"></script>

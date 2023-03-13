@@ -3,16 +3,21 @@
     background-color: $color-prinicipal;
     color: aliceblue;
     text-align: map-get($map-flex, center);
-
-    .textoFooter {
-        justify-content: map-get($map-flex, center);
-        flex-wrap: map-get($map-flex, $key: wrap);
-        padding-top: $valoresp-estandar;
-        font-weight: bold;
-
-        .redesFooter {
-            padding-top: $valoresp-estandar;
-            margin-right: 10vh;
-        }
+    .logoFOOT{
+       &:hover{
+        transform: rotate(350deg);
+      }
     }
+            .textoFooter {
+                justify-content: map-get($map-flex, center);
+                flex-wrap: map-get($map-flex, $key: wrap);
+                padding-top: $valoresp-estandar;
+                font-weight: bold;
+
+                .redesFooter {
+                    padding-top: $valoresp-estandar;
+                    margin-right: 10vh;
+                }
+            }
+
 }
