@@ -17,13 +17,13 @@
   <link rel="stylesheet" href="../assets/fontawesome-free-6.3.0-web/css/svg-with-js.css">
    <link rel="stylesheet" href="../css/all.min.css">
   <link rel="stylesheet" href="../css/styles.css">
-  <title>Contacto</title>
+  <title>Molarhealth-Contacto</title>
 </head>
 
 <body>
   <header>
     <div class="container-fluid fixed-top cabecera">
-      <a href="../index.html"><img id="logo" src="../assets/images/logomhblanco.png"></a>
+      <a href="../index.html"><img id="logo" src="../assets/images/logomhblanco.png" alt="logo" title="logo"></a>
       <nav>
         <nav class="navbar navbar-expand-lg navbar-light">
           <div class="container-fluid">
@@ -59,8 +59,8 @@
   <main class="principal">
     <section class="d-flex container-fluid formularios">
       <div class="col-sm-12 col-md-12 col-lg-12">
-        <form class="formulario" action="validar.html">
-          <legend class="tituloCONT"data-aos-duration="1000"data-aos="fade-up">Agenda Una Consulta</legend>
+        <form class="formulario" action="error404.html">
+          <h1 class="tituloCONT"data-aos-duration="1000"data-aos="fade-up">Agenda Una Consulta</h1>
           <fieldset data-aos-duration="1000"data-aos="fade-up">
             <legend> Datos Personales</legend>
             <div class="row g-3">
@@ -95,15 +95,15 @@
             <legend>Sobre la Consulta</legend>
             <div class="row g-3">
               <div class="col consultas">
-                <input type="date" class="form-control" placeholder="Fecha de Consulta" aria-label="Fecha">
+                <input type="date" class="form-control" placeholder="Fecha de Consulta" aria-label="Fecha" required>
               </div>
               <div class="col consultas">
-                <input type="time" class="form-control" placeholder="Hora de Consulta" aria-label="Hora">
+                <input type="time" class="form-control" placeholder="Hora de Consulta" aria-label="Hora" required>
               </div>
             </div>
             <div class="row">
               <div class="col-sm-12 col-md-12 col-lg-12">
-                <select class="form-select consultas" aria-label="Default select example">
+                <select class="form-select consultas" aria-label="Default select example" required>
                   <option selected>Seleccione su Especialidad</option>
                   <option class="opciones" value="OdontoGeneral">Odontología General</option>
                   <option class="opciones" value="Ortodoncia Invisible">Ortodoncia Invisible</option>
@@ -148,16 +148,18 @@
   <footer class="container-fluid p-4 pie">
     <div class="d-lg-flex justify-content-between">
       <div >
-        <span ><a href="../index.html"><img id="logo" class="logoFOOT"src="../assets/images/logomhblancoFOOTER.png"></a></span>
+        <span ><a href="../index.html"><img id="logo" class="logoFOOT"src="../assets/images/logomhblancoFOOTER.png"alt="logoFOOT" title="logoFOOT"></a></span>
       </div>
        <div class="textoFooter">
         <p>Seguinos en Las Redes </p>
+        <p>Desarrollado por Juanjo </p>
+
       </div>
       <div>
         <ul class="d-flex gap-3 list-unstyled redesFooter">
-          <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
-          <li><a href="https://twitter.com/?lang=es"><i class="fa-brands fa-twitter"></i></a></li>
-          <li><a href="https://web.telegram.org/z/"><i class="fa-brands fa-telegram"></i></a></li>
+          <li><a href="https://www.instagram.com/"target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="https://twitter.com/?lang=es"target="_blank" rel="noopener"><i class="fa-brands fa-twitter"></i></a></li>
+          <li><a href="https://web.telegram.org/z/"target="_blank" rel="noopener"><i class="fa-brands fa-telegram"></i></a></li>
         </ul>
       </div>
      

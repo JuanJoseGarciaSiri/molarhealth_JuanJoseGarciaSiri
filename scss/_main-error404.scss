@@ -1,0 +1,33 @@
+.Err404 {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top:10%;
+    justify-content: map-get($map-flex, center);
+    align-items: map-get($map-flex, center);
+    overflow-x: $ocultar;
+    .error { 
+        .row {
+            .colError {
+                padding-top: 10%;
+                .tituloError {  
+                    text-align: center;
+                    justify-content: map-get($map-flex, center);
+                    align-items: map-get($map-flex, center);
+
+            }
+             }
+            .colError2{
+             .foto404{
+                    height:100%;
+                    width: 100%;
+                    object-fit: cover;
+                    border-radius: 5%;
+                }
+                padding-top:5%;
+                justify-content: map-get($map-flex, center);
+                align-items: map-get($map-flex, center);
+                overflow-x: $ocultar;
+            }
+    }
+}
+}

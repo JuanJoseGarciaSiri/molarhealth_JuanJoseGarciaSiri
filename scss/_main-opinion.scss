@@ -21,10 +21,10 @@
             justify-content: map-get($map-flex, center);
             align-items: map-get($map-flex, center);
             margin: 4vh;
-
+         
             .imagenesOP {
-                height: 100;
-                width: 100;
+                height: 100%;
+                width: 100%;
                 object-fit: cover;
             }
 

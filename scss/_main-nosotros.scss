@@ -7,16 +7,19 @@
 .doctores {
     justify-content: map-get($map-flex, center);
     @include flexible;
+    text-align: center;
     background-color: $color-terciario;
     font-size: 1.2rem;
     padding-top: 20vh;
     padding-bottom: 10vh;
     overflow-y: $ocultar;
     overflow-x: $ocultar;
-
+    padding-left: 5%;
     .row {
         .colDocs {
             margin-top: $valoresp-estandar;
+            overflow-y: $ocultar;
+            overflow-x: $ocultar;
 
             .docs {
                 .card-body {
@@ -24,6 +27,10 @@
                         @include colorTextDark;
                         text-decoration: double;
                     }
+                    overflow-y: $ocultar;
+                    overflow-x: $ocultar;
+                    justify-content: map-get($map-flex, center);
+                    padding:5%;
                 }
             }
 
@@ -45,7 +52,7 @@
         .carousel-inner {
             .carousel-item {
                 .card-img {
-                    height: 70vh;
+                    height: 60vh;
                     width: 100%;
                     object-fit: cover;
                 }

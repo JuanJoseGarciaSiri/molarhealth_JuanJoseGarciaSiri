@@ -5,7 +5,14 @@
             .fotoscarousel {
                 height: 90vh;
                 object-fit: cover;
+
             }
+        }
+
+        .capt {
+            background-color: $color-terciario;
+            border-color: $color-letrasclaras;
+            border-radius: 80%;
         }
     }
 
@@ -25,7 +32,8 @@
             .imagenesAgenda {
                 height: 100%;
                 width: 100%;
-                &:hover{
+
+                &:hover {
                     transform: scale(1.03);
                     overflow: $ocultar;
                     transition: all 0.5s;
@@ -50,19 +58,21 @@
 
 
     .NOScard {
-        border: 4px;
         border-color: black;
         justify-content: map-get($map-flex, center);
         overflow-y: $ocultar;
         overflow-x: $ocultar;
-        &:hover{
+
+        &:hover {
             transform: scale(1.15);
             overflow: $ocultar;
             transition: all 0.5s;
         }
+
         .row {
             .card-body {
                 .txtNOS {
+                    text-align: center;
                     @include colorTextDark;
                 }
             }
@@ -100,9 +110,11 @@
                         color: $color-prinicipal;
                         margin-right: 3%;
                     }
-               
-                } &:hover{
-                    transform: scale(1.15);
+
+                }
+
+                &:hover {
+                    transform: scale(1.05);
                     overflow: $ocultar;
                     transition: all 0.5s;
                 }
@@ -118,9 +130,18 @@
 }
 
 ///MEDIA QUERIES INDEX///
-@media screen and (max-width:768px) {
+@media screen and (min-width:401px)and(max-width:768px) {
     .opiniones {
         flex-direction: map-get($flex-dir, col);
+        overflow-x: $ocultar;
+        overflow-y: $ocultar;
+    }
+
+}
+@media screen and (min-width:0px)and(max-width:400px) {
+    .opiniones {
+        flex-direction: map-get($flex-dir, col);
+        align-items: map-get($map-flex, center );
         overflow-x: $ocultar;
         overflow-y: $ocultar;
     }

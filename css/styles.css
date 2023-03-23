@@ -55,6 +55,11 @@ a {
   height: 90vh;
   object-fit: cover; }
 
+.galeriaIndex .slider .capt {
+  background-color: #3626c7;
+  border-color: aliceblue;
+  border-radius: 80%; }
+
 .agendaT {
   display: flex;
   text-align: center;
@@ -82,7 +87,6 @@ a {
   background-position: center;
   background-size: cover; }
   .nosotrosT .NOScard {
-    border: 4px;
     border-color: black;
     justify-content: center;
     overflow-y: hidden;
@@ -92,6 +96,7 @@ a {
       overflow: hidden;
       transition: all 0.5s; }
     .nosotrosT .NOScard .row .card-body .txtNOS {
+      text-align: center;
       color: black; }
 
 .opiniones {
@@ -115,13 +120,20 @@ a {
       color: #0b0954;
       margin-right: 3%; }
     .opiniones .row .cardOP .card:hover {
-      transform: scale(1.15);
+      transform: scale(1.05);
       overflow: hidden;
       transition: all 0.5s; }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 401px) and (max-width: 768px) {
   .opiniones {
     flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: hidden; } }
+
+@media screen and (min-width: 0px) and (max-width: 400px) {
+  .opiniones {
+    flex-direction: column;
+    align-items: center;
     overflow-x: hidden;
     overflow-y: hidden; } }
 
@@ -133,17 +145,26 @@ a {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  text-align: center;
   background-color: #3626c7;
   font-size: 1.2rem;
   padding-top: 20vh;
   padding-bottom: 10vh;
   overflow-y: hidden;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  padding-left: 5%; }
   .doctores .row .colDocs {
-    margin-top: 6vh; }
-    .doctores .row .colDocs .docs .card-body .textoDOCS {
-      color: black;
-      text-decoration: double; }
+    margin-top: 6vh;
+    overflow-y: hidden;
+    overflow-x: hidden; }
+    .doctores .row .colDocs .docs .card-body {
+      overflow-y: hidden;
+      overflow-x: hidden;
+      justify-content: center;
+      padding: 5%; }
+      .doctores .row .colDocs .docs .card-body .textoDOCS {
+        color: black;
+        text-decoration: double; }
 
 .clinica {
   text-align: center;
@@ -152,7 +173,7 @@ a {
   .clinica .textoCLIN {
     color: aliceblue; }
   .clinica .slide .carousel-inner .carousel-item .card-img {
-    height: 70vh;
+    height: 60vh;
     width: 100%;
     object-fit: cover; }
 
@@ -267,8 +288,8 @@ a {
       align-items: center;
       margin: 4vh; }
       .opinionesP .Cards .tarjetaCuerpo .imagenesOP {
-        height: 100;
-        width: 100;
+        height: 100%;
+        width: 100%;
         object-fit: cover; }
       .opinionesP .Cards .tarjetaCuerpo .card-body .textoOP {
         color: black; }
@@ -305,6 +326,30 @@ a {
             width: 100%;
             object-fit: cover;
             overflow-x: hidden; } }
+
+.Err404 {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 10%;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden; }
+  .Err404 .error .row .colError {
+    padding-top: 10%; }
+    .Err404 .error .row .colError .tituloError {
+      text-align: center;
+      justify-content: center;
+      align-items: center; }
+  .Err404 .error .row .colError2 {
+    padding-top: 5%;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden; }
+    .Err404 .error .row .colError2 .foto404 {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 5%; }
 
 /* ELEMENTOS DEL FOOTER*/
 .pie {
