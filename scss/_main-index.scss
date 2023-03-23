@@ -89,11 +89,13 @@
     align-items: map-get($map-flex, center);
     text-align: map-get($map-flex, center);
     background-color: $color-secundario;
-    padding: 5%;
+    padding: 2%;
 
     .row {
         .cardOP {
-            margin: $valoresp-estandar;
+            margin-left: 7%;
+            margin-top: 5%;
+            margin-bottom: 5%;
             overflow: $ocultar;
             width: 48vh;
             border-radius: 4%;
@@ -130,20 +132,40 @@
 }
 
 ///MEDIA QUERIES INDEX///
-@media screen and (min-width:401px)and(max-width:768px) {
+@media screen and(max-width:768px) {
     .opiniones {
         flex-direction: map-get($flex-dir, col);
         overflow-x: $ocultar;
         overflow-y: $ocultar;
-    }
-
-}
-@media screen and (min-width:0px)and(max-width:400px) {
-    .opiniones {
-        flex-direction: map-get($flex-dir, col);
-        align-items: map-get($map-flex, center );
-        overflow-x: $ocultar;
-        overflow-y: $ocultar;
+        .row {
+            .cardOP {
+                margin: 5%;
+                overflow: $ocultar;
+                width: 48vh;
+                border-radius: 4%;
+    
+                .card {
+                    .imgpaciente {
+                        object-fit: cover;
+                        height: 100%;
+                        width: 100%;
+                    }
+    
+                    .card-body {
+                        .OPindex {
+                            color: $color-prinicipal;
+                            margin-right: 13%;
+                        }
+    
+                    }
+                }
+            }
+    
+    
+    
+    
+    
+        }
     }
 
 }

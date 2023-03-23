@@ -106,9 +106,11 @@ a {
   align-items: center;
   text-align: center;
   background-color: #14129b;
-  padding: 5%; }
+  padding: 2%; }
   .opiniones .row .cardOP {
-    margin: 6vh;
+    margin-left: 7%;
+    margin-top: 5%;
+    margin-bottom: 5%;
     overflow: hidden;
     width: 48vh;
     border-radius: 4%; }
@@ -124,18 +126,23 @@ a {
       overflow: hidden;
       transition: all 0.5s; }
 
-@media screen and (min-width: 401px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .opiniones {
     flex-direction: column;
     overflow-x: hidden;
-    overflow-y: hidden; } }
-
-@media screen and (min-width: 0px) and (max-width: 400px) {
-  .opiniones {
-    flex-direction: column;
-    align-items: center;
-    overflow-x: hidden;
-    overflow-y: hidden; } }
+    overflow-y: hidden; }
+    .opiniones .row .cardOP {
+      margin: 5%;
+      overflow: hidden;
+      width: 48vh;
+      border-radius: 4%; }
+      .opiniones .row .cardOP .card .imgpaciente {
+        object-fit: cover;
+        height: 100%;
+        width: 100%; }
+      .opiniones .row .cardOP .card .card-body .OPindex {
+        color: #0b0954;
+        margin-right: 13%; } }
 
 /*NOSOTROS*/
 .titulonos {
